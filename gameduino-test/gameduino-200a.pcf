@@ -1,0 +1,1254 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 18 17:59:00 2026
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "AUX" LOCATE = SITE "P78" LEVEL 1;
+COMP "SCK" LOCATE = SITE "P84" LEVEL 1;
+COMP "MISO" LOCATE = SITE "P86" LEVEL 1;
+COMP "MOSI" LOCATE = SITE "P85" LEVEL 1;
+COMP "SSEL" LOCATE = SITE "P88" LEVEL 1;
+COMP "clka" LOCATE = SITE "P83" LEVEL 1;
+COMP "vga_red<0>" LOCATE = SITE "P19" LEVEL 1;
+COMP "vga_red<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "vga_red<2>" LOCATE = SITE "P15" LEVEL 1;
+COMP "flashMISO" LOCATE = SITE "P51" LEVEL 1;
+COMP "flashMOSI" LOCATE = SITE "P46" LEVEL 1;
+COMP "flashSSEL" LOCATE = SITE "P27" LEVEL 1;
+COMP "vga_blue<0>" LOCATE = SITE "P5" LEVEL 1;
+COMP "vga_blue<1>" LOCATE = SITE "P6" LEVEL 1;
+COMP "vga_blue<2>" LOCATE = SITE "P9" LEVEL 1;
+COMP "vga_hsync_n" LOCATE = SITE "P4" LEVEL 1;
+COMP "AUDIOL" LOCATE = SITE "P99" LEVEL 1;
+COMP "AUDIOR" LOCATE = SITE "P98" LEVEL 1;
+COMP "vga_vsync_n" LOCATE = SITE "P3" LEVEL 1;
+COMP "flashSCK" LOCATE = SITE "P53" LEVEL 1;
+COMP "vga_green<0>" LOCATE = SITE "P10" LEVEL 1;
+COMP "vga_green<1>" LOCATE = SITE "P12" LEVEL 1;
+COMP "vga_green<2>" LOCATE = SITE "P13" LEVEL 1;
+PIN sprimg/ram0_pins<28> = BEL "sprimg/ram0" PINNAME CLKA;
+PIN sprimg/ram0_pins<29> = BEL "sprimg/ram0" PINNAME CLKB;
+PIN sprimg/ram1_pins<28> = BEL "sprimg/ram1" PINNAME CLKA;
+PIN sprimg/ram1_pins<29> = BEL "sprimg/ram1" PINNAME CLKB;
+PIN sprimg/ram2_pins<28> = BEL "sprimg/ram2" PINNAME CLKA;
+PIN sprimg/ram2_pins<29> = BEL "sprimg/ram2" PINNAME CLKB;
+PIN sprimg/ram3_pins<28> = BEL "sprimg/ram3" PINNAME CLKA;
+PIN sprimg/ram3_pins<29> = BEL "sprimg/ram3" PINNAME CLKB;
+PIN sprimg/ram4_pins<28> = BEL "sprimg/ram4" PINNAME CLKA;
+PIN sprimg/ram4_pins<29> = BEL "sprimg/ram4" PINNAME CLKB;
+PIN sprimg/ram5_pins<28> = BEL "sprimg/ram5" PINNAME CLKA;
+PIN sprimg/ram5_pins<29> = BEL "sprimg/ram5" PINNAME CLKB;
+PIN sprimg/ram6_pins<28> = BEL "sprimg/ram6" PINNAME CLKA;
+PIN sprimg/ram6_pins<29> = BEL "sprimg/ram6" PINNAME CLKB;
+PIN sprimg/ram7_pins<28> = BEL "sprimg/ram7" PINNAME CLKA;
+PIN sprimg/ram7_pins<29> = BEL "sprimg/ram7" PINNAME CLKB;
+PIN chars/ram0_pins<26> = BEL "chars/ram0" PINNAME CLKA;
+PIN chars/ram0_pins<27> = BEL "chars/ram0" PINNAME CLKB;
+PIN chars/ram1_pins<26> = BEL "chars/ram1" PINNAME CLKA;
+PIN chars/ram1_pins<27> = BEL "chars/ram1" PINNAME CLKB;
+PIN picture/ram0_pins<24> = BEL "picture/ram0" PINNAME CLKA;
+PIN picture/ram0_pins<25> = BEL "picture/ram0" PINNAME CLKB;
+PIN picture/ram1_pins<24> = BEL "picture/ram1" PINNAME CLKA;
+PIN picture/ram1_pins<25> = BEL "picture/ram1" PINNAME CLKB;
+PIN charpalette/ram_pins<21> = BEL "charpalette/ram" PINNAME CLKA;
+PIN charpalette/ram_pins<22> = BEL "charpalette/ram" PINNAME CLKB;
+PIN sprpal/ram_pins<21> = BEL "sprpal/ram" PINNAME CLKA;
+PIN sprpal/ram_pins<22> = BEL "sprpal/ram" PINNAME CLKB;
+PIN composer_pins<20> = BEL "composer" PINNAME CLKA;
+PIN composer_pins<21> = BEL "composer" PINNAME CLKB;
+PIN sprval/ram_pins<20> = BEL "sprval/ram" PINNAME CLKA;
+PIN sprval/ram_pins<21> = BEL "sprval/ram" PINNAME CLKB;
+TIMEGRP vga_clk1 = BEL "scrollx_7" BEL "scrollx_6" BEL "scrollx_3" BEL
+        "scrollx_5" BEL "scrollx_4" BEL "scrollx_2" BEL "scrollx_1" BEL
+        "scrollx_0" BEL "scrollx_8" BEL "scrolly_7" BEL "scrolly_6" BEL
+        "scrolly_5" BEL "scrolly_4" BEL "scrolly_3" BEL "scrolly_2" BEL
+        "scrolly_1" BEL "scrolly_0" BEL "scrolly_8" BEL "spr_page" BEL
+        "CounterY_0" BEL "CounterY_1" BEL "CounterY_2" BEL "CounterY_3" BEL
+        "CounterY_4" BEL "CounterY_5" BEL "CounterY_6" BEL "CounterY_7" BEL
+        "CounterY_8" BEL "CounterY_9" BEL "comp_workcnt_lt_400" BEL
+        "vga_active" BEL "screenshot_done" BEL "s1_consider" BEL "lacc_0" BEL
+        "lacc_1" BEL "lacc_2" BEL "lacc_3" BEL "lacc_4" BEL "lacc_5" BEL
+        "lacc_6" BEL "lacc_7" BEL "lacc_8" BEL "lacc_9" BEL "lacc_10" BEL
+        "lacc_11" BEL "lacc_12" BEL "lacc_13" BEL "lacc_14" BEL "lacc_15" BEL
+        "racc_0" BEL "racc_1" BEL "racc_2" BEL "racc_3" BEL "racc_4" BEL
+        "racc_5" BEL "racc_6" BEL "racc_7" BEL "racc_8" BEL "racc_9" BEL
+        "racc_10" BEL "racc_11" BEL "racc_12" BEL "racc_13" BEL "racc_14" BEL
+        "racc_15" BEL "busyhh_0" BEL "busyhh_1" BEL "busyhh_2" BEL "s1_id_0"
+        BEL "s1_id_1" BEL "s1_id_2" BEL "s1_id_3" BEL "s1_id_4" BEL "s1_id_5"
+        BEL "s1_id_6" BEL "s1_id_7" BEL "_column_0" BEL "_column_1" BEL
+        "_column_2" BEL "vga_HS" BEL "vga_VS" BEL "s3_pal_0" BEL "s3_pal_1"
+        BEL "s3_pal_2" BEL "s3_pal_3" BEL "s3_jk" BEL "yyline_rnm0_0" BEL
+        "yyline_rnm0_1" BEL "yyline_rnm0_2" BEL "yyline_rnm0_3" BEL
+        "yyline_rnm0_4" BEL "yyline_rnm0_5" BEL "yyline_rnm0_6" BEL
+        "yyline_rnm0_7" BEL "yyline_rnm0_8" BEL "s3_id_0" BEL "s3_id_1" BEL
+        "s3_id_2" BEL "s3_id_3" BEL "s3_id_4" BEL "s3_id_5" BEL "s3_id_6" BEL
+        "s3_id_7" BEL "s4_compaddr_0" BEL "s4_compaddr_1" BEL "s4_compaddr_2"
+        BEL "s4_compaddr_3" BEL "s4_compaddr_4" BEL "s4_compaddr_5" BEL
+        "s4_compaddr_6" BEL "s4_compaddr_7" BEL "s4_compaddr_8" BEL "s4_jk"
+        BEL "s4_id_0" BEL "s4_id_1" BEL "s4_id_2" BEL "s4_id_3" BEL "s4_id_4"
+        BEL "s4_id_5" BEL "s4_id_6" BEL "s4_id_7" BEL "_glyph_0" BEL
+        "_glyph_1" BEL "_glyph_2" BEL "_glyph_3" BEL "_glyph_4" BEL "_glyph_5"
+        BEL "_glyph_6" BEL "_glyph_7" BEL "s4_valid" BEL
+        "latched_mem_data_rd_0" BEL "latched_mem_data_rd_1" BEL
+        "latched_mem_data_rd_2" BEL "latched_mem_data_rd_3" BEL
+        "latched_mem_data_rd_4" BEL "latched_mem_data_rd_5" BEL
+        "latched_mem_data_rd_6" BEL "latched_mem_data_rd_7" BEL "j1_reset" BEL
+        "jkmode" BEL "spr_disable" BEL "pin2mode_0" BEL "pin2mode_1" BEL
+        "pin2mode_2" BEL "pin2mode_3" BEL "pin2mode_4" BEL "pin2mode_5" BEL
+        "pin2mode_6" BEL "pin2mode_7" BEL "bg_color_7" BEL "bg_color_4" BEL
+        "bg_color_6" BEL "bg_color_5" BEL "bg_color_3" BEL "bg_color_2" BEL
+        "bg_color_1" BEL "bg_color_0" BEL "bg_color_12" BEL "bg_color_14" BEL
+        "bg_color_13" BEL "bg_color_11" BEL "bg_color_10" BEL "bg_color_9" BEL
+        "bg_color_8" BEL "sample_l_7" BEL "sample_l_6" BEL "sample_l_5" BEL
+        "sample_l_4" BEL "sample_l_3" BEL "sample_l_2" BEL "sample_l_1" BEL
+        "sample_l_0" BEL "sample_l_13" BEL "sample_l_15" BEL "sample_l_14" BEL
+        "sample_l_12" BEL "sample_l_11" BEL "sample_l_10" BEL "sample_l_9" BEL
+        "sample_r_6" BEL "sample_l_8" BEL "sample_r_7" BEL "sample_r_5" BEL
+        "sample_r_4" BEL "sample_r_3" BEL "sample_r_2" BEL "sample_r_15" BEL
+        "sample_r_1" BEL "sample_r_0" BEL "sample_r_14" BEL "sample_r_13" BEL
+        "sample_r_12" BEL "sample_r_11" BEL "sample_r_10" BEL "sample_r_9" BEL
+        "sample_r_8" BEL "modvoice_0" BEL "modvoice_1" BEL "modvoice_2" BEL
+        "modvoice_3" BEL "modvoice_4" BEL "modvoice_5" BEL "modvoice_6" BEL
+        "screenshot_yy_7" BEL "screenshot_yy_6" BEL "screenshot_yy_5" BEL
+        "screenshot_yy_4" BEL "screenshot_yy_1" BEL "screenshot_yy_3" BEL
+        "screenshot_yy_2" BEL "screenshot_yy_0" BEL "screenshot_yy_8" BEL
+        "screenshot_primed" BEL "sprpal4_0" BEL "sprpal4_1" BEL "sprpal4_2"
+        BEL "sprpal4_3" BEL "sprpal4_4" BEL "sprpal4_5" BEL "sprpal4_6" BEL
+        "sprpal4_7" BEL "sprpal4_8" BEL "sprpal4_9" BEL "sprpal4_10" BEL
+        "sprpal4_11" BEL "sprpal4_12" BEL "sprpal4_13" BEL "sprpal4_14" BEL
+        "sprpal4_15" BEL "sprpal16_0" BEL "sprpal16_1" BEL "sprpal16_2" BEL
+        "sprpal16_3" BEL "sprpal16_4" BEL "sprpal16_5" BEL "sprpal16_6" BEL
+        "sprpal16_7" BEL "sprpal16_8" BEL "sprpal16_9" BEL "sprpal16_10" BEL
+        "sprpal16_11" BEL "sprpal16_12" BEL "sprpal16_13" BEL "sprpal16_14"
+        BEL "sprpal16_15" BEL "lmodulated_0" BEL "lmodulated_1" BEL
+        "lmodulated_2" BEL "lmodulated_3" BEL "lmodulated_4" BEL
+        "lmodulated_5" BEL "lmodulated_6" BEL "lmodulated_7" BEL
+        "lmodulated_8" BEL "lmodulated_9" BEL "lmodulated_10" BEL
+        "lmodulated_11" BEL "lmodulated_12" BEL "lmodulated_13" BEL
+        "lmodulated_14" BEL "lmodulated_15" BEL "rmodulated_0" BEL
+        "rmodulated_1" BEL "rmodulated_2" BEL "rmodulated_3" BEL
+        "rmodulated_4" BEL "rmodulated_5" BEL "rmodulated_6" BEL
+        "rmodulated_7" BEL "rmodulated_8" BEL "rmodulated_9" BEL
+        "rmodulated_10" BEL "rmodulated_11" BEL "rmodulated_12" BEL
+        "rmodulated_13" BEL "rmodulated_14" BEL "rmodulated_15" BEL "icap_i_0"
+        BEL "icap_i_1" BEL "icap_i_2" BEL "icap_i_3" BEL "icap_i_4" BEL
+        "icap_i_5" BEL "icap_i_6" BEL "icap_i_7" BEL "icap_write" BEL
+        "icap_clk" BEL "icap_ce" BEL "dna_clk" BEL "dna_shift" BEL "dna_read"
+        BEL "freqhz_0" BEL "freqhz_1" BEL "freqhz_2" BEL "freqhz_3" BEL
+        "freqhz_4" BEL "freqhz_5" BEL "freqhz_6" BEL "freqhz_7" BEL "freqhz_8"
+        BEL "freqhz_9" BEL "freqhz_10" BEL "freqhz_11" BEL "freqhz_12" BEL
+        "freqhz_13" BEL "freqhz_14" BEL "freqhz_15" BEL "j1_flashMOSI" BEL
+        "j1_p2_o" BEL "j1_p2_dir" BEL "j1_flashSCK" BEL "j1_flashSSEL" BEL
+        "lvalue_0" BEL "lvalue_1" BEL "lvalue_2" BEL "lvalue_3" BEL "lvalue_4"
+        BEL "lvalue_5" BEL "lvalue_6" BEL "lvalue_7" BEL "lvalue_8" BEL
+        "lvalue_9" BEL "lvalue_10" BEL "lvalue_11" BEL "lvalue_12" BEL
+        "rvalue_0" BEL "rvalue_1" BEL "rvalue_2" BEL "rvalue_3" BEL "rvalue_4"
+        BEL "rvalue_5" BEL "rvalue_6" BEL "rvalue_7" BEL "rvalue_8" BEL
+        "rvalue_9" BEL "rvalue_10" BEL "rvalue_11" BEL "rvalue_12" BEL
+        "freqd_0" BEL "freqd_1" BEL "freqd_2" BEL "freqd_3" BEL "freqd_4" BEL
+        "freqd_5" BEL "freqd_6" BEL "freqd_7" BEL "freqd_8" BEL "freqd_9" BEL
+        "freqd_10" BEL "freqd_11" BEL "freqd_12" BEL "freqd_13" BEL "freqd_14"
+        BEL "freqd_15" BEL "freqd_16" BEL "freqd_17" BEL "freqd_18" BEL
+        "freqd_19" BEL "freqd_20" BEL "freqd_21" BEL "freqd_22" BEL "freqd_23"
+        BEL "freqd_24" BEL "freqd_25" BEL "freqd_26" BEL "rdac/DACout" BEL
+        "ldac/DACout" BEL "Mmult_lprod_mult0001" BEL "Mmult_rprod_mult0001"
+        BEL "frames_0" BEL "frames_1" BEL "frames_2" BEL "frames_3" BEL
+        "frames_4" BEL "frames_5" BEL "frames_6" BEL "frames_7" BEL
+        "CounterX_0" BEL "CounterX_1" BEL "CounterX_2" BEL "CounterX_3" BEL
+        "CounterX_4" BEL "CounterX_5" BEL "CounterX_6" BEL "CounterX_7" BEL
+        "CounterX_8" BEL "CounterX_9" BEL "CounterX_10" BEL "comp_workcnt_0"
+        BEL "comp_workcnt_1" BEL "comp_workcnt_2" BEL "comp_workcnt_3" BEL
+        "comp_workcnt_4" BEL "comp_workcnt_5" BEL "comp_workcnt_6" BEL
+        "comp_workcnt_7" BEL "comp_workcnt_8" BEL "comp_workcnt_9" BEL
+        "comp_workcnt_10" BEL "comp_workcnt_11" BEL "comp_workcnt_12" BEL
+        "soundcounter_0" BEL "soundcounter_1" BEL "soundcounter_2" BEL
+        "soundcounter_3" BEL "soundcounter_4" BEL "soundcounter_5" BEL
+        "soundcounter_6" BEL "soundcounter_7" BEL "soundcounter_8" BEL
+        "soundcounter_9" BEL "soundcounter_10" BEL "soundcounter_11" BEL
+        "soundcounter_12" BEL "soundcounter_13" BEL "soundcounter_14" BEL
+        "soundcounter_15" BEL "s1_count_0" BEL "s1_count_1" BEL "s1_count_2"
+        BEL "s1_count_3" BEL "s1_count_4" BEL "s1_count_5" BEL "s1_count_6"
+        BEL "s1_count_7" BEL "s1_count_8" BEL "d_7" BEL "d_8" BEL "d_9" BEL
+        "d_10" BEL "d_11" BEL "d_12" BEL "d_13" BEL "d_14" BEL "d_15" BEL
+        "d_16" BEL "d_17" BEL "d_18" BEL "d_19" BEL "d_20" BEL "d_21" BEL
+        "d_22" BEL "d_23" BEL "d_24" BEL "d_25" BEL "d_26" BEL "d_27" BEL
+        "rdac/SigmaLatch_0" BEL "rdac/SigmaLatch_1" BEL "rdac/SigmaLatch_2"
+        BEL "rdac/SigmaLatch_3" BEL "rdac/SigmaLatch_4" BEL
+        "rdac/SigmaLatch_5" BEL "rdac/SigmaLatch_8" BEL "rdac/SigmaLatch_6"
+        BEL "rdac/SigmaLatch_7" BEL "rdac/SigmaLatch_9" BEL
+        "rdac/SigmaLatch_10" BEL "rdac/SigmaLatch_11" BEL "rdac/SigmaLatch_12"
+        BEL "rdac/SigmaLatch_13" BEL "ldac/SigmaLatch_1" BEL
+        "ldac/SigmaLatch_0" BEL "ldac/SigmaLatch_2" BEL "ldac/SigmaLatch_3"
+        BEL "ldac/SigmaLatch_4" BEL "ldac/SigmaLatch_5" BEL
+        "ldac/SigmaLatch_6" BEL "ldac/SigmaLatch_7" BEL "ldac/SigmaLatch_10"
+        BEL "ldac/SigmaLatch_8" BEL "ldac/SigmaLatch_9" BEL
+        "ldac/SigmaLatch_11" BEL "ldac/SigmaLatch_12" BEL "ldac/SigmaLatch_13"
+        BEL "freqtick_0" BEL "freqtick_1" BEL "freqtick_2" BEL "freqtick_3"
+        BEL "freqtick_4" BEL "freqtick_5" BEL "freqtick_6" BEL "freqtick_7"
+        BEL "s3_state_1" BEL "s3_state_0" BEL "s3_state_2" BEL "s3_state_3"
+        BEL "soundmaster_0" BEL "soundmaster_1" BEL "soundmaster_2" BEL
+        "soundmaster_3" BEL "soundmaster_4" BEL "soundmaster_5" BEL
+        "soundmaster_6" BEL "soundmaster_7" BEL "soundmaster_8" BEL
+        "soundmaster_9" BEL "soundmaster_10" BEL "soundmaster_11" BEL
+        "soundmaster_12" BEL "soundmaster_13" BEL "soundmaster_14" BEL
+        "soundmaster_15" BEL "soundmaster_16" BEL "rdac/SigmaLatch_14" BEL
+        "ldac/SigmaLatch_14" BEL "s3_state_4" BEL "vs7/ring3" BEL "vs7/ring2"
+        BEL "vs7/ring1" BEL "vs7/ring0" BEL "vs6/ring3" BEL "vs6/ring2" BEL
+        "vs6/ring1" BEL "vs6/ring0" BEL "vs5/ring3" BEL "vs5/ring2" BEL
+        "vs5/ring1" BEL "vs5/ring0" BEL "vs4/ring3" BEL "vs4/ring2" BEL
+        "vs4/ring1" BEL "vs4/ring0" BEL "vs3/ring3" BEL "vs3/ring2" BEL
+        "vs3/ring1" BEL "vs3/ring0" BEL "vs2/ring3" BEL "vs2/ring2" BEL
+        "vs2/ring1" BEL "vs2/ring0" BEL "vs1/ring3" BEL "vs1/ring2" BEL
+        "vs1/ring1" BEL "vs1/ring0" BEL "vs0/ring3" BEL "vs0/ring2" BEL
+        "vs0/ring1" BEL "vs0/ring0" BEL "voicera/ramx[0].ramx/hi/hi.SLICEM_F"
+        BEL "voicera/ramx[0].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[0].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[0].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[0].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[0].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[0].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[0].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[1].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[1].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[1].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[1].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[1].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[1].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[1].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[1].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[2].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[2].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[2].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[2].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[2].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[2].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[2].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[2].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[3].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[3].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[3].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[3].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[3].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[3].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[3].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[3].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[4].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[4].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[4].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[4].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[4].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[4].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[4].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[4].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[5].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[5].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[5].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[5].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[5].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[5].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[5].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[5].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[6].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[6].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[6].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[6].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[6].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[6].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[6].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[6].ramx/lo/lo.SLICEM_G" BEL
+        "voicera/ramx[7].ramx/hi/hi.SLICEM_F" BEL
+        "voicera/ramx[7].ramx/hi/hi.SLICEM_G" BEL
+        "voicera/ramx[7].ramx/hi/lo.SLICEM_F" BEL
+        "voicera/ramx[7].ramx/hi/lo.SLICEM_G" BEL
+        "voicera/ramx[7].ramx/lo/hi.SLICEM_F" BEL
+        "voicera/ramx[7].ramx/lo/hi.SLICEM_G" BEL
+        "voicera/ramx[7].ramx/lo/lo.SLICEM_F" BEL
+        "voicera/ramx[7].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[0].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[0].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[0].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[0].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[0].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[0].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[0].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[0].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[1].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[1].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[1].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[1].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[1].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[1].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[1].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[1].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[2].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[2].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[2].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[2].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[2].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[2].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[2].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[2].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[3].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[3].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[3].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[3].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[3].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[3].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[3].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[3].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[4].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[4].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[4].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[4].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[4].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[4].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[4].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[4].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[5].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[5].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[5].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[5].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[5].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[5].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[5].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[5].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[6].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[6].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[6].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[6].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[6].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[6].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[6].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[6].ramx/lo/lo.SLICEM_G" BEL
+        "voicela/ramx[7].ramx/hi/hi.SLICEM_F" BEL
+        "voicela/ramx[7].ramx/hi/hi.SLICEM_G" BEL
+        "voicela/ramx[7].ramx/hi/lo.SLICEM_F" BEL
+        "voicela/ramx[7].ramx/hi/lo.SLICEM_G" BEL
+        "voicela/ramx[7].ramx/lo/hi.SLICEM_F" BEL
+        "voicela/ramx[7].ramx/lo/hi.SLICEM_G" BEL
+        "voicela/ramx[7].ramx/lo/lo.SLICEM_F" BEL
+        "voicela/ramx[7].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[0].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[0].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[0].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[0].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[0].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[0].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[0].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[0].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[1].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[1].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[1].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[1].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[1].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[1].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[1].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[1].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[2].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[2].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[2].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[2].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[2].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[2].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[2].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[2].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[3].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[3].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[3].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[3].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[3].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[3].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[3].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[3].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[4].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[4].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[4].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[4].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[4].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[4].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[4].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[4].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[5].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[5].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[5].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[5].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[5].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[5].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[5].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[5].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[6].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[6].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[6].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[6].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[6].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[6].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[6].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[6].ramx/lo/lo.SLICEM_G" BEL
+        "voicefh/ramx[7].ramx/hi/hi.SLICEM_F" BEL
+        "voicefh/ramx[7].ramx/hi/hi.SLICEM_G" BEL
+        "voicefh/ramx[7].ramx/hi/lo.SLICEM_F" BEL
+        "voicefh/ramx[7].ramx/hi/lo.SLICEM_G" BEL
+        "voicefh/ramx[7].ramx/lo/hi.SLICEM_F" BEL
+        "voicefh/ramx[7].ramx/lo/hi.SLICEM_G" BEL
+        "voicefh/ramx[7].ramx/lo/lo.SLICEM_F" BEL
+        "voicefh/ramx[7].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[0].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[0].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[0].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[0].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[0].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[0].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[0].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[0].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[1].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[1].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[1].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[1].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[1].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[1].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[1].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[1].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[2].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[2].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[2].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[2].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[2].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[2].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[2].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[2].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[3].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[3].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[3].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[3].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[3].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[3].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[3].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[3].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[4].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[4].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[4].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[4].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[4].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[4].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[4].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[4].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[5].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[5].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[5].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[5].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[5].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[5].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[5].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[5].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[6].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[6].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[6].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[6].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[6].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[6].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[6].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[6].ramx/lo/lo.SLICEM_G" BEL
+        "voicefl/ramx[7].ramx/hi/hi.SLICEM_F" BEL
+        "voicefl/ramx[7].ramx/hi/hi.SLICEM_G" BEL
+        "voicefl/ramx[7].ramx/hi/lo.SLICEM_F" BEL
+        "voicefl/ramx[7].ramx/hi/lo.SLICEM_G" BEL
+        "voicefl/ramx[7].ramx/lo/hi.SLICEM_F" BEL
+        "voicefl/ramx[7].ramx/lo/hi.SLICEM_G" BEL
+        "voicefl/ramx[7].ramx/lo/lo.SLICEM_F" BEL
+        "voicefl/ramx[7].ramx/lo/lo.SLICEM_G" BEL "spi1/paddr_15" BEL
+        "spi1/paddr_14" BEL "spi1/paddr_13" BEL "spi1/paddr_12" BEL
+        "spi1/paddr_11" BEL "spi1/paddr_10" BEL "spi1/paddr_9" BEL
+        "spi1/paddr_8" BEL "spi1/paddr_7" BEL "spi1/paddr_6" BEL
+        "spi1/paddr_5" BEL "spi1/paddr_4" BEL "spi1/paddr_3" BEL
+        "spi1/paddr_2" BEL "spi1/paddr_1" BEL "spi1/paddr_0" BEL
+        "spi1/waddr_14" BEL "spi1/waddr_13" BEL "spi1/waddr_12" BEL
+        "spi1/waddr_11" BEL "spi1/waddr_10" BEL "spi1/waddr_9" BEL
+        "spi1/waddr_8" BEL "spi1/waddr_7" BEL "spi1/waddr_6" BEL
+        "spi1/waddr_5" BEL "spi1/waddr_4" BEL "spi1/waddr_3" BEL
+        "spi1/waddr_2" BEL "spi1/waddr_1" BEL "spi1/waddr_0" BEL
+        "spi1/data_w_7" BEL "spi1/data_w_6" BEL "spi1/data_w_5" BEL
+        "spi1/data_w_4" BEL "spi1/data_w_3" BEL "spi1/data_w_2" BEL
+        "spi1/data_w_1" BEL "spi1/data_w_0" BEL "spi1/re" BEL "spi1/count_4"
+        BEL "spi1/count_3" BEL "spi1/count_2" BEL "spi1/count_1" BEL
+        "spi1/count_0" BEL "spi1/we" BEL "spi1/SCKr_2" BEL "lfsr0/lfsr_16" BEL
+        "lfsr0/lfsr_15" BEL "lfsr0/lfsr_14" BEL "lfsr0/lfsr_13" BEL
+        "lfsr0/lfsr_12" BEL "lfsr0/lfsr_11" BEL "lfsr0/lfsr_10" BEL
+        "lfsr0/lfsr_9" BEL "lfsr0/lfsr_8" BEL "lfsr0/lfsr_7" BEL
+        "lfsr0/lfsr_6" BEL "lfsr0/lfsr_5" BEL "lfsr0/lfsr_4" BEL
+        "lfsr0/lfsr_3" BEL "lfsr0/lfsr_2" BEL "lfsr0/lfsr_1" BEL
+        "lfsr0/lfsr_0" BEL "j/Mram_rstack31.SLICEM_F" BEL
+        "j/Mram_rstack31.SLICEM_G" BEL "j/Mram_rstack30.SLICEM_F" BEL
+        "j/Mram_rstack30.SLICEM_G" BEL "j/Mram_rstack32.SLICEM_F" BEL
+        "j/Mram_rstack32.SLICEM_G" BEL "j/Mram_rstack28.SLICEM_F" BEL
+        "j/Mram_rstack28.SLICEM_G" BEL "j/Mram_rstack27.SLICEM_F" BEL
+        "j/Mram_rstack27.SLICEM_G" BEL "j/Mram_rstack29.SLICEM_F" BEL
+        "j/Mram_rstack29.SLICEM_G" BEL "j/Mram_rstack26.SLICEM_F" BEL
+        "j/Mram_rstack26.SLICEM_G" BEL "j/Mram_rstack25.SLICEM_F" BEL
+        "j/Mram_rstack25.SLICEM_G" BEL "j/Mram_rstack24.SLICEM_F" BEL
+        "j/Mram_rstack24.SLICEM_G" BEL "j/Mram_rstack23.SLICEM_F" BEL
+        "j/Mram_rstack23.SLICEM_G" BEL "j/Mram_rstack21.SLICEM_F" BEL
+        "j/Mram_rstack21.SLICEM_G" BEL "j/Mram_rstack20.SLICEM_F" BEL
+        "j/Mram_rstack20.SLICEM_G" BEL "j/Mram_rstack22.SLICEM_F" BEL
+        "j/Mram_rstack22.SLICEM_G" BEL "j/Mram_rstack18.SLICEM_F" BEL
+        "j/Mram_rstack18.SLICEM_G" BEL "j/Mram_rstack17.SLICEM_F" BEL
+        "j/Mram_rstack17.SLICEM_G" BEL "j/Mram_rstack19.SLICEM_F" BEL
+        "j/Mram_rstack19.SLICEM_G" BEL "j/Mram_rstack15.SLICEM_F" BEL
+        "j/Mram_rstack15.SLICEM_G" BEL "j/Mram_rstack14.SLICEM_F" BEL
+        "j/Mram_rstack14.SLICEM_G" BEL "j/Mram_rstack16.SLICEM_F" BEL
+        "j/Mram_rstack16.SLICEM_G" BEL "j/Mram_rstack13.SLICEM_F" BEL
+        "j/Mram_rstack13.SLICEM_G" BEL "j/Mram_rstack12.SLICEM_F" BEL
+        "j/Mram_rstack12.SLICEM_G" BEL "j/Mram_rstack11.SLICEM_F" BEL
+        "j/Mram_rstack11.SLICEM_G" BEL "j/Mram_rstack10.SLICEM_F" BEL
+        "j/Mram_rstack10.SLICEM_G" BEL "j/Mram_rstack8.SLICEM_F" BEL
+        "j/Mram_rstack8.SLICEM_G" BEL "j/Mram_rstack7.SLICEM_F" BEL
+        "j/Mram_rstack7.SLICEM_G" BEL "j/Mram_rstack9.SLICEM_F" BEL
+        "j/Mram_rstack9.SLICEM_G" BEL "j/Mram_rstack6.SLICEM_F" BEL
+        "j/Mram_rstack6.SLICEM_G" BEL "j/Mram_rstack5.SLICEM_F" BEL
+        "j/Mram_rstack5.SLICEM_G" BEL "j/Mram_rstack4.SLICEM_F" BEL
+        "j/Mram_rstack4.SLICEM_G" BEL "j/Mram_rstack3.SLICEM_F" BEL
+        "j/Mram_rstack3.SLICEM_G" BEL "j/Mram_rstack1.SLICEM_F" BEL
+        "j/Mram_rstack1.SLICEM_G" BEL "j/Mram_rstack2.SLICEM_F" BEL
+        "j/Mram_rstack2.SLICEM_G" BEL "j/Mram_dstack32.SLICEM_F" BEL
+        "j/Mram_dstack32.SLICEM_G" BEL "j/Mram_dstack30.SLICEM_F" BEL
+        "j/Mram_dstack30.SLICEM_G" BEL "j/Mram_dstack29.SLICEM_F" BEL
+        "j/Mram_dstack29.SLICEM_G" BEL "j/Mram_dstack31.SLICEM_F" BEL
+        "j/Mram_dstack31.SLICEM_G" BEL "j/Mram_dstack27.SLICEM_F" BEL
+        "j/Mram_dstack27.SLICEM_G" BEL "j/Mram_dstack26.SLICEM_F" BEL
+        "j/Mram_dstack26.SLICEM_G" BEL "j/Mram_dstack28.SLICEM_F" BEL
+        "j/Mram_dstack28.SLICEM_G" BEL "j/Mram_dstack24.SLICEM_F" BEL
+        "j/Mram_dstack24.SLICEM_G" BEL "j/Mram_dstack23.SLICEM_F" BEL
+        "j/Mram_dstack23.SLICEM_G" BEL "j/Mram_dstack25.SLICEM_F" BEL
+        "j/Mram_dstack25.SLICEM_G" BEL "j/Mram_dstack22.SLICEM_F" BEL
+        "j/Mram_dstack22.SLICEM_G" BEL "j/Mram_dstack21.SLICEM_F" BEL
+        "j/Mram_dstack21.SLICEM_G" BEL "j/Mram_dstack20.SLICEM_F" BEL
+        "j/Mram_dstack20.SLICEM_G" BEL "j/Mram_dstack19.SLICEM_F" BEL
+        "j/Mram_dstack19.SLICEM_G" BEL "j/Mram_dstack17.SLICEM_F" BEL
+        "j/Mram_dstack17.SLICEM_G" BEL "j/Mram_dstack16.SLICEM_F" BEL
+        "j/Mram_dstack16.SLICEM_G" BEL "j/Mram_dstack18.SLICEM_F" BEL
+        "j/Mram_dstack18.SLICEM_G" BEL "j/Mram_dstack14.SLICEM_F" BEL
+        "j/Mram_dstack14.SLICEM_G" BEL "j/Mram_dstack13.SLICEM_F" BEL
+        "j/Mram_dstack13.SLICEM_G" BEL "j/Mram_dstack15.SLICEM_F" BEL
+        "j/Mram_dstack15.SLICEM_G" BEL "j/Mram_dstack11.SLICEM_F" BEL
+        "j/Mram_dstack11.SLICEM_G" BEL "j/Mram_dstack10.SLICEM_F" BEL
+        "j/Mram_dstack10.SLICEM_G" BEL "j/Mram_dstack12.SLICEM_F" BEL
+        "j/Mram_dstack12.SLICEM_G" BEL "j/Mram_dstack9.SLICEM_F" BEL
+        "j/Mram_dstack9.SLICEM_G" BEL "j/Mram_dstack8.SLICEM_F" BEL
+        "j/Mram_dstack8.SLICEM_G" BEL "j/Mram_dstack7.SLICEM_F" BEL
+        "j/Mram_dstack7.SLICEM_G" BEL "j/Mram_dstack6.SLICEM_F" BEL
+        "j/Mram_dstack6.SLICEM_G" BEL "j/Mram_dstack4.SLICEM_F" BEL
+        "j/Mram_dstack4.SLICEM_G" BEL "j/Mram_dstack3.SLICEM_F" BEL
+        "j/Mram_dstack3.SLICEM_G" BEL "j/Mram_dstack5.SLICEM_F" BEL
+        "j/Mram_dstack5.SLICEM_G" BEL "j/Mram_dstack2.SLICEM_F" BEL
+        "j/Mram_dstack2.SLICEM_G" BEL "j/Mram_dstack1.SLICEM_F" BEL
+        "j/Mram_dstack1.SLICEM_G" BEL "j/Mmult__st0_mult0001" BEL "j/rsp_4"
+        BEL "j/rsp_3" BEL "j/rsp_2" BEL "j/rsp_1" BEL "j/rsp_0" BEL "j/st0_15"
+        BEL "j/st0_14" BEL "j/st0_13" BEL "j/st0_12" BEL "j/st0_11" BEL
+        "j/st0_10" BEL "j/st0_9" BEL "j/st0_8" BEL "j/st0_7" BEL "j/st0_6" BEL
+        "j/st0_5" BEL "j/st0_4" BEL "j/st0_3" BEL "j/st0_2" BEL "j/st0_1" BEL
+        "j/st0_0" BEL "j/dsp_4" BEL "j/dsp_3" BEL "j/dsp_2" BEL "j/dsp_1" BEL
+        "j/dsp_0" BEL "j/pc_6" BEL "j/pc_5" BEL "j/pc_4" BEL "j/pc_3" BEL
+        "j/pc_2" BEL "j/pc_1" BEL "j/pc_0" BEL "s2/srl16[39].fifo16" BEL
+        "s2/srl16[38].fifo16" BEL "s2/srl16[37].fifo16" BEL
+        "s2/srl16[36].fifo16" BEL "s2/srl16[35].fifo16" BEL
+        "s2/srl16[34].fifo16" BEL "s2/srl16[33].fifo16" BEL
+        "s2/srl16[32].fifo16" BEL "s2/srl16[31].fifo16" BEL
+        "s2/srl16[30].fifo16" BEL "s2/srl16[29].fifo16" BEL
+        "s2/srl16[28].fifo16" BEL "s2/srl16[27].fifo16" BEL
+        "s2/srl16[26].fifo16" BEL "s2/srl16[25].fifo16" BEL
+        "s2/srl16[19].fifo16" BEL "s2/srl16[18].fifo16" BEL
+        "s2/srl16[17].fifo16" BEL "s2/srl16[16].fifo16" BEL
+        "s2/srl16[15].fifo16" BEL "s2/srl16[14].fifo16" BEL
+        "s2/srl16[13].fifo16" BEL "s2/srl16[12].fifo16" BEL
+        "s2/srl16[11].fifo16" BEL "s2/srl16[10].fifo16" BEL
+        "s2/srl16[9].fifo16" BEL "s2/srl16[8].fifo16" BEL "s2/srl16[7].fifo16"
+        BEL "s2/srl16[6].fifo16" BEL "s2/srl16[5].fifo16" BEL
+        "s2/srl16[4].fifo16" BEL "s2/srl16[3].fifo16" BEL "s2/srl16[2].fifo16"
+        BEL "s2/srl16[1].fifo16" BEL "s2/srl16[0].fifo16" BEL "s2/fullness_4"
+        BEL "s2/fullness_3" BEL "s2/fullness_2" BEL "s2/fullness_1" BEL
+        "s2/fullness_0" BEL "palette4h/ramx[0].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[0].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[1].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[1].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[2].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[2].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[3].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[3].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[4].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[4].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[5].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[5].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[6].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[6].ramx/lo.SLICEM_G" BEL
+        "palette4h/ramx[7].ramx/lo.SLICEM_F" BEL
+        "palette4h/ramx[7].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[0].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[0].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[1].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[1].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[2].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[2].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[3].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[3].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[4].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[4].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[5].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[5].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[6].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[6].ramx/lo.SLICEM_G" BEL
+        "palette4l/ramx[7].ramx/lo.SLICEM_F" BEL
+        "palette4l/ramx[7].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[0].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[0].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[0].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[0].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[1].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[1].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[1].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[1].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[2].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[2].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[2].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[2].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[3].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[3].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[3].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[3].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[4].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[4].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[4].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[4].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[5].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[5].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[5].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[5].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[6].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[6].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[6].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[6].ramx/hi.SLICEM_G" BEL
+        "palette16h/ramx[7].ramx/lo.SLICEM_F" BEL
+        "palette16h/ramx[7].ramx/lo.SLICEM_G" BEL
+        "palette16h/ramx[7].ramx/hi.SLICEM_F" BEL
+        "palette16h/ramx[7].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[0].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[0].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[0].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[0].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[1].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[1].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[1].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[1].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[2].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[2].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[2].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[2].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[3].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[3].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[3].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[3].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[4].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[4].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[4].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[4].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[5].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[5].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[5].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[5].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[6].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[6].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[6].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[6].ramx/hi.SLICEM_G" BEL
+        "palette16l/ramx[7].ramx/lo.SLICEM_F" BEL
+        "palette16l/ramx[7].ramx/lo.SLICEM_G" BEL
+        "palette16l/ramx[7].ramx/hi.SLICEM_F" BEL
+        "palette16l/ramx[7].ramx/hi.SLICEM_G" BEL "occ/ramx[0].ramx/r6" BEL
+        "occ/ramx[1].ramx/r6" BEL "occ/ramx[2].ramx/r6" BEL
+        "occ/ramx[3].ramx/r6" BEL "occ/ramx[4].ramx/r6" BEL
+        "occ/ramx[5].ramx/r6" BEL "occ/ramx[6].ramx/r6" BEL
+        "occ/ramx[7].ramx/r6" BEL "occ/ramx[8].ramx/r6" BEL
+        "jinsnl/ram7/lo/hi/lo.SLICEM_F" BEL "jinsnl/ram7/lo/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram7/lo/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram7/lo/hi/hi.SLICEM_G" BEL "jinsnl/ram7/lo/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram7/lo/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram7/lo/lo/hi.SLICEM_F" BEL "jinsnl/ram7/lo/lo/hi.SLICEM_G"
+        BEL "jinsnl/ram7/hi/hi/lo.SLICEM_F" BEL
+        "jinsnl/ram7/hi/hi/lo.SLICEM_G" BEL "jinsnl/ram7/hi/hi/hi.SLICEM_F"
+        BEL "jinsnl/ram7/hi/hi/hi.SLICEM_G" BEL
+        "jinsnl/ram7/hi/lo/lo.SLICEM_F" BEL "jinsnl/ram7/hi/lo/lo.SLICEM_G"
+        BEL "jinsnl/ram7/hi/lo/hi.SLICEM_F" BEL
+        "jinsnl/ram7/hi/lo/hi.SLICEM_G" BEL "jinsnl/ram6/lo/hi/lo.SLICEM_F"
+        BEL "jinsnl/ram6/lo/hi/lo.SLICEM_G" BEL
+        "jinsnl/ram6/lo/hi/hi.SLICEM_F" BEL "jinsnl/ram6/lo/hi/hi.SLICEM_G"
+        BEL "jinsnl/ram6/lo/lo/lo.SLICEM_F" BEL
+        "jinsnl/ram6/lo/lo/lo.SLICEM_G" BEL "jinsnl/ram6/lo/lo/hi.SLICEM_F"
+        BEL "jinsnl/ram6/lo/lo/hi.SLICEM_G" BEL
+        "jinsnl/ram6/hi/hi/lo.SLICEM_F" BEL "jinsnl/ram6/hi/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram6/hi/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram6/hi/hi/hi.SLICEM_G" BEL "jinsnl/ram6/hi/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram6/hi/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram6/hi/lo/hi.SLICEM_F" BEL "jinsnl/ram6/hi/lo/hi.SLICEM_G"
+        BEL "jinsnl/ram5/lo/hi/lo.SLICEM_F" BEL
+        "jinsnl/ram5/lo/hi/lo.SLICEM_G" BEL "jinsnl/ram5/lo/hi/hi.SLICEM_F"
+        BEL "jinsnl/ram5/lo/hi/hi.SLICEM_G" BEL
+        "jinsnl/ram5/lo/lo/lo.SLICEM_F" BEL "jinsnl/ram5/lo/lo/lo.SLICEM_G"
+        BEL "jinsnl/ram5/lo/lo/hi.SLICEM_F" BEL
+        "jinsnl/ram5/lo/lo/hi.SLICEM_G" BEL "jinsnl/ram5/hi/hi/lo.SLICEM_F"
+        BEL "jinsnl/ram5/hi/hi/lo.SLICEM_G" BEL
+        "jinsnl/ram5/hi/hi/hi.SLICEM_F" BEL "jinsnl/ram5/hi/hi/hi.SLICEM_G"
+        BEL "jinsnl/ram5/hi/lo/lo.SLICEM_F" BEL
+        "jinsnl/ram5/hi/lo/lo.SLICEM_G" BEL "jinsnl/ram5/hi/lo/hi.SLICEM_F"
+        BEL "jinsnl/ram5/hi/lo/hi.SLICEM_G" BEL
+        "jinsnl/ram4/lo/hi/lo.SLICEM_F" BEL "jinsnl/ram4/lo/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram4/lo/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram4/lo/hi/hi.SLICEM_G" BEL "jinsnl/ram4/lo/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram4/lo/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram4/lo/lo/hi.SLICEM_F" BEL "jinsnl/ram4/lo/lo/hi.SLICEM_G"
+        BEL "jinsnl/ram4/hi/hi/lo.SLICEM_F" BEL
+        "jinsnl/ram4/hi/hi/lo.SLICEM_G" BEL "jinsnl/ram4/hi/hi/hi.SLICEM_F"
+        BEL "jinsnl/ram4/hi/hi/hi.SLICEM_G" BEL
+        "jinsnl/ram4/hi/lo/lo.SLICEM_F" BEL "jinsnl/ram4/hi/lo/lo.SLICEM_G"
+        BEL "jinsnl/ram4/hi/lo/hi.SLICEM_F" BEL
+        "jinsnl/ram4/hi/lo/hi.SLICEM_G" BEL "jinsnl/ram3/lo/hi/lo.SLICEM_F"
+        BEL "jinsnl/ram3/lo/hi/lo.SLICEM_G" BEL
+        "jinsnl/ram3/lo/hi/hi.SLICEM_F" BEL "jinsnl/ram3/lo/hi/hi.SLICEM_G"
+        BEL "jinsnl/ram3/lo/lo/lo.SLICEM_F" BEL
+        "jinsnl/ram3/lo/lo/lo.SLICEM_G" BEL "jinsnl/ram3/lo/lo/hi.SLICEM_F"
+        BEL "jinsnl/ram3/lo/lo/hi.SLICEM_G" BEL
+        "jinsnl/ram3/hi/hi/lo.SLICEM_F" BEL "jinsnl/ram3/hi/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram3/hi/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram3/hi/hi/hi.SLICEM_G" BEL "jinsnl/ram3/hi/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram3/hi/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram3/hi/lo/hi.SLICEM_F" BEL "jinsnl/ram3/hi/lo/hi.SLICEM_G"
+        BEL "jinsnl/ram2/lo/hi/lo.SLICEM_F" BEL
+        "jinsnl/ram2/lo/hi/lo.SLICEM_G" BEL "jinsnl/ram2/lo/hi/hi.SLICEM_F"
+        BEL "jinsnl/ram2/lo/hi/hi.SLICEM_G" BEL
+        "jinsnl/ram2/lo/lo/lo.SLICEM_F" BEL "jinsnl/ram2/lo/lo/lo.SLICEM_G"
+        BEL "jinsnl/ram2/lo/lo/hi.SLICEM_F" BEL
+        "jinsnl/ram2/lo/lo/hi.SLICEM_G" BEL "jinsnl/ram2/hi/hi/lo.SLICEM_F"
+        BEL "jinsnl/ram2/hi/hi/lo.SLICEM_G" BEL
+        "jinsnl/ram2/hi/hi/hi.SLICEM_F" BEL "jinsnl/ram2/hi/hi/hi.SLICEM_G"
+        BEL "jinsnl/ram2/hi/lo/lo.SLICEM_F" BEL
+        "jinsnl/ram2/hi/lo/lo.SLICEM_G" BEL "jinsnl/ram2/hi/lo/hi.SLICEM_F"
+        BEL "jinsnl/ram2/hi/lo/hi.SLICEM_G" BEL
+        "jinsnl/ram1/lo/hi/lo.SLICEM_F" BEL "jinsnl/ram1/lo/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram1/lo/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram1/lo/hi/hi.SLICEM_G" BEL "jinsnl/ram1/lo/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram1/lo/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram1/lo/lo/hi.SLICEM_F" BEL "jinsnl/ram1/lo/lo/hi.SLICEM_G"
+        BEL "jinsnl/ram1/hi/hi/lo.SLICEM_F" BEL
+        "jinsnl/ram1/hi/hi/lo.SLICEM_G" BEL "jinsnl/ram1/hi/hi/hi.SLICEM_F"
+        BEL "jinsnl/ram1/hi/hi/hi.SLICEM_G" BEL
+        "jinsnl/ram1/hi/lo/lo.SLICEM_F" BEL "jinsnl/ram1/hi/lo/lo.SLICEM_G"
+        BEL "jinsnl/ram1/hi/lo/hi.SLICEM_F" BEL
+        "jinsnl/ram1/hi/lo/hi.SLICEM_G" BEL "jinsnl/ram0/lo/hi/lo.SLICEM_F"
+        BEL "jinsnl/ram0/lo/hi/lo.SLICEM_G" BEL
+        "jinsnl/ram0/lo/hi/hi.SLICEM_F" BEL "jinsnl/ram0/lo/hi/hi.SLICEM_G"
+        BEL "jinsnl/ram0/lo/lo/lo.SLICEM_F" BEL
+        "jinsnl/ram0/lo/lo/lo.SLICEM_G" BEL "jinsnl/ram0/lo/lo/hi.SLICEM_F"
+        BEL "jinsnl/ram0/lo/lo/hi.SLICEM_G" BEL
+        "jinsnl/ram0/hi/hi/lo.SLICEM_F" BEL "jinsnl/ram0/hi/hi/lo.SLICEM_G"
+        BEL "jinsnl/ram0/hi/hi/hi.SLICEM_F" BEL
+        "jinsnl/ram0/hi/hi/hi.SLICEM_G" BEL "jinsnl/ram0/hi/lo/lo.SLICEM_F"
+        BEL "jinsnl/ram0/hi/lo/lo.SLICEM_G" BEL
+        "jinsnl/ram0/hi/lo/hi.SLICEM_F" BEL "jinsnl/ram0/hi/lo/hi.SLICEM_G"
+        BEL "jinsnl/bo_7" BEL "jinsnl/bo_6" BEL "jinsnl/bo_5" BEL
+        "jinsnl/bo_4" BEL "jinsnl/bo_3" BEL "jinsnl/bo_2" BEL "jinsnl/bo_1"
+        BEL "jinsnl/bo_0" BEL "jinsnl/ao_7" BEL "jinsnl/ao_6" BEL
+        "jinsnl/ao_5" BEL "jinsnl/ao_4" BEL "jinsnl/ao_3" BEL "jinsnl/ao_2"
+        BEL "jinsnl/ao_1" BEL "jinsnl/ao_0" BEL
+        "jinsnh/ram7/lo/hi/lo.SLICEM_F" BEL "jinsnh/ram7/lo/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram7/lo/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram7/lo/hi/hi.SLICEM_G" BEL "jinsnh/ram7/lo/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram7/lo/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram7/lo/lo/hi.SLICEM_F" BEL "jinsnh/ram7/lo/lo/hi.SLICEM_G"
+        BEL "jinsnh/ram7/hi/hi/lo.SLICEM_F" BEL
+        "jinsnh/ram7/hi/hi/lo.SLICEM_G" BEL "jinsnh/ram7/hi/hi/hi.SLICEM_F"
+        BEL "jinsnh/ram7/hi/hi/hi.SLICEM_G" BEL
+        "jinsnh/ram7/hi/lo/lo.SLICEM_F" BEL "jinsnh/ram7/hi/lo/lo.SLICEM_G"
+        BEL "jinsnh/ram7/hi/lo/hi.SLICEM_F" BEL
+        "jinsnh/ram7/hi/lo/hi.SLICEM_G" BEL "jinsnh/ram6/lo/hi/lo.SLICEM_F"
+        BEL "jinsnh/ram6/lo/hi/lo.SLICEM_G" BEL
+        "jinsnh/ram6/lo/hi/hi.SLICEM_F" BEL "jinsnh/ram6/lo/hi/hi.SLICEM_G"
+        BEL "jinsnh/ram6/lo/lo/lo.SLICEM_F" BEL
+        "jinsnh/ram6/lo/lo/lo.SLICEM_G" BEL "jinsnh/ram6/lo/lo/hi.SLICEM_F"
+        BEL "jinsnh/ram6/lo/lo/hi.SLICEM_G" BEL
+        "jinsnh/ram6/hi/hi/lo.SLICEM_F" BEL "jinsnh/ram6/hi/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram6/hi/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram6/hi/hi/hi.SLICEM_G" BEL "jinsnh/ram6/hi/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram6/hi/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram6/hi/lo/hi.SLICEM_F" BEL "jinsnh/ram6/hi/lo/hi.SLICEM_G"
+        BEL "jinsnh/ram5/lo/hi/lo.SLICEM_F" BEL
+        "jinsnh/ram5/lo/hi/lo.SLICEM_G" BEL "jinsnh/ram5/lo/hi/hi.SLICEM_F"
+        BEL "jinsnh/ram5/lo/hi/hi.SLICEM_G" BEL
+        "jinsnh/ram5/lo/lo/lo.SLICEM_F" BEL "jinsnh/ram5/lo/lo/lo.SLICEM_G"
+        BEL "jinsnh/ram5/lo/lo/hi.SLICEM_F" BEL
+        "jinsnh/ram5/lo/lo/hi.SLICEM_G" BEL "jinsnh/ram5/hi/hi/lo.SLICEM_F"
+        BEL "jinsnh/ram5/hi/hi/lo.SLICEM_G" BEL
+        "jinsnh/ram5/hi/hi/hi.SLICEM_F" BEL "jinsnh/ram5/hi/hi/hi.SLICEM_G"
+        BEL "jinsnh/ram5/hi/lo/lo.SLICEM_F" BEL
+        "jinsnh/ram5/hi/lo/lo.SLICEM_G" BEL "jinsnh/ram5/hi/lo/hi.SLICEM_F"
+        BEL "jinsnh/ram5/hi/lo/hi.SLICEM_G" BEL
+        "jinsnh/ram4/lo/hi/lo.SLICEM_F" BEL "jinsnh/ram4/lo/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram4/lo/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram4/lo/hi/hi.SLICEM_G" BEL "jinsnh/ram4/lo/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram4/lo/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram4/lo/lo/hi.SLICEM_F" BEL "jinsnh/ram4/lo/lo/hi.SLICEM_G"
+        BEL "jinsnh/ram4/hi/hi/lo.SLICEM_F" BEL
+        "jinsnh/ram4/hi/hi/lo.SLICEM_G" BEL "jinsnh/ram4/hi/hi/hi.SLICEM_F"
+        BEL "jinsnh/ram4/hi/hi/hi.SLICEM_G" BEL
+        "jinsnh/ram4/hi/lo/lo.SLICEM_F" BEL "jinsnh/ram4/hi/lo/lo.SLICEM_G"
+        BEL "jinsnh/ram4/hi/lo/hi.SLICEM_F" BEL
+        "jinsnh/ram4/hi/lo/hi.SLICEM_G" BEL "jinsnh/ram3/lo/hi/lo.SLICEM_F"
+        BEL "jinsnh/ram3/lo/hi/lo.SLICEM_G" BEL
+        "jinsnh/ram3/lo/hi/hi.SLICEM_F" BEL "jinsnh/ram3/lo/hi/hi.SLICEM_G"
+        BEL "jinsnh/ram3/lo/lo/lo.SLICEM_F" BEL
+        "jinsnh/ram3/lo/lo/lo.SLICEM_G" BEL "jinsnh/ram3/lo/lo/hi.SLICEM_F"
+        BEL "jinsnh/ram3/lo/lo/hi.SLICEM_G" BEL
+        "jinsnh/ram3/hi/hi/lo.SLICEM_F" BEL "jinsnh/ram3/hi/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram3/hi/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram3/hi/hi/hi.SLICEM_G" BEL "jinsnh/ram3/hi/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram3/hi/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram3/hi/lo/hi.SLICEM_F" BEL "jinsnh/ram3/hi/lo/hi.SLICEM_G"
+        BEL "jinsnh/ram2/lo/hi/lo.SLICEM_F" BEL
+        "jinsnh/ram2/lo/hi/lo.SLICEM_G" BEL "jinsnh/ram2/lo/hi/hi.SLICEM_F"
+        BEL "jinsnh/ram2/lo/hi/hi.SLICEM_G" BEL
+        "jinsnh/ram2/lo/lo/lo.SLICEM_F" BEL "jinsnh/ram2/lo/lo/lo.SLICEM_G"
+        BEL "jinsnh/ram2/lo/lo/hi.SLICEM_F" BEL
+        "jinsnh/ram2/lo/lo/hi.SLICEM_G" BEL "jinsnh/ram2/hi/hi/lo.SLICEM_F"
+        BEL "jinsnh/ram2/hi/hi/lo.SLICEM_G" BEL
+        "jinsnh/ram2/hi/hi/hi.SLICEM_F" BEL "jinsnh/ram2/hi/hi/hi.SLICEM_G"
+        BEL "jinsnh/ram2/hi/lo/lo.SLICEM_F" BEL
+        "jinsnh/ram2/hi/lo/lo.SLICEM_G" BEL "jinsnh/ram2/hi/lo/hi.SLICEM_F"
+        BEL "jinsnh/ram2/hi/lo/hi.SLICEM_G" BEL
+        "jinsnh/ram1/lo/hi/lo.SLICEM_F" BEL "jinsnh/ram1/lo/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram1/lo/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram1/lo/hi/hi.SLICEM_G" BEL "jinsnh/ram1/lo/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram1/lo/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram1/lo/lo/hi.SLICEM_F" BEL "jinsnh/ram1/lo/lo/hi.SLICEM_G"
+        BEL "jinsnh/ram1/hi/hi/lo.SLICEM_F" BEL
+        "jinsnh/ram1/hi/hi/lo.SLICEM_G" BEL "jinsnh/ram1/hi/hi/hi.SLICEM_F"
+        BEL "jinsnh/ram1/hi/hi/hi.SLICEM_G" BEL
+        "jinsnh/ram1/hi/lo/lo.SLICEM_F" BEL "jinsnh/ram1/hi/lo/lo.SLICEM_G"
+        BEL "jinsnh/ram1/hi/lo/hi.SLICEM_F" BEL
+        "jinsnh/ram1/hi/lo/hi.SLICEM_G" BEL "jinsnh/ram0/lo/hi/lo.SLICEM_F"
+        BEL "jinsnh/ram0/lo/hi/lo.SLICEM_G" BEL
+        "jinsnh/ram0/lo/hi/hi.SLICEM_F" BEL "jinsnh/ram0/lo/hi/hi.SLICEM_G"
+        BEL "jinsnh/ram0/lo/lo/lo.SLICEM_F" BEL
+        "jinsnh/ram0/lo/lo/lo.SLICEM_G" BEL "jinsnh/ram0/lo/lo/hi.SLICEM_F"
+        BEL "jinsnh/ram0/lo/lo/hi.SLICEM_G" BEL
+        "jinsnh/ram0/hi/hi/lo.SLICEM_F" BEL "jinsnh/ram0/hi/hi/lo.SLICEM_G"
+        BEL "jinsnh/ram0/hi/hi/hi.SLICEM_F" BEL
+        "jinsnh/ram0/hi/hi/hi.SLICEM_G" BEL "jinsnh/ram0/hi/lo/lo.SLICEM_F"
+        BEL "jinsnh/ram0/hi/lo/lo.SLICEM_G" BEL
+        "jinsnh/ram0/hi/lo/hi.SLICEM_F" BEL "jinsnh/ram0/hi/lo/hi.SLICEM_G"
+        BEL "jinsnh/bo_7" BEL "jinsnh/bo_6" BEL "jinsnh/bo_5" BEL
+        "jinsnh/bo_4" BEL "jinsnh/bo_3" BEL "jinsnh/bo_2" BEL "jinsnh/bo_1"
+        BEL "jinsnh/bo_0" BEL "jinsnh/ao_7" BEL "jinsnh/ao_6" BEL
+        "jinsnh/ao_5" BEL "jinsnh/ao_4" BEL "jinsnh/ao_3" BEL "jinsnh/ao_2"
+        BEL "jinsnh/ao_1" BEL "jinsnh/ao_0" BEL "spi1/Mshreg_MOSIr_1/SRL16E"
+        BEL "spi1/MOSIr_1" BEL "spi1/Mshreg_SSELr_1/SRL16E" BEL "spi1/SSELr_1"
+        BEL "spi1/Mshreg_SCKr_1/SRL16E" BEL "spi1/SCKr_1" BEL "sin0/G.S0" BEL
+        "sin0/F.S0" BEL "sin0/F.S1" BEL "sin0/G.S1" BEL "sin1/G.S0" BEL
+        "sin1/F.S0" BEL "sin1/F.S1" BEL "sin1/G.S1" BEL "sin2/G.S0" BEL
+        "sin2/F.S0" BEL "sin2/F.S1" BEL "sin2/G.S1" BEL "sin3/G.S0" BEL
+        "sin3/F.S0" BEL "sin3/F.S1" BEL "sin3/G.S1" BEL "sin4/G.S0" BEL
+        "sin4/F.S0" BEL "sin4/F.S1" BEL "sin4/G.S1" BEL "sin5/G.S0" BEL
+        "sin5/F.S0" BEL "sin5/F.S1" BEL "sin5/G.S1" BEL "sin6/G.S0" BEL
+        "sin6/F.S0" BEL "sin6/F.S1" BEL "sin6/G.S1" BEL
+        "coll/ramx[0].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[0].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[0].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[0].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[0].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[0].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[0].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[0].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[0].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[0].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[0].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[0].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[0].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[0].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[0].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[0].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[1].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[1].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[1].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[1].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[1].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[1].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[1].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[1].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[1].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[1].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[1].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[1].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[1].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[1].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[1].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[1].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[2].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[2].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[2].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[2].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[2].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[2].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[2].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[2].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[2].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[2].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[2].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[2].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[2].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[2].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[2].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[2].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[3].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[3].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[3].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[3].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[3].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[3].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[3].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[3].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[3].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[3].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[3].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[3].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[3].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[3].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[3].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[3].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[4].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[4].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[4].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[4].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[4].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[4].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[4].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[4].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[4].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[4].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[4].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[4].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[4].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[4].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[4].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[4].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[5].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[5].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[5].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[5].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[5].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[5].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[5].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[5].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[5].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[5].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[5].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[5].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[5].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[5].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[5].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[5].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[6].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[6].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[6].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[6].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[6].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[6].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[6].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[6].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[6].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[6].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[6].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[6].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[6].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[6].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[6].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[6].ramx/ramx[3].r0/G.S1" BEL
+        "coll/ramx[7].ramx/ramx[0].r0/G.S0" BEL
+        "coll/ramx[7].ramx/ramx[0].r0/F.S0" BEL
+        "coll/ramx[7].ramx/ramx[0].r0/F.S1" BEL
+        "coll/ramx[7].ramx/ramx[0].r0/G.S1" BEL
+        "coll/ramx[7].ramx/ramx[1].r0/G.S0" BEL
+        "coll/ramx[7].ramx/ramx[1].r0/F.S0" BEL
+        "coll/ramx[7].ramx/ramx[1].r0/F.S1" BEL
+        "coll/ramx[7].ramx/ramx[1].r0/G.S1" BEL
+        "coll/ramx[7].ramx/ramx[2].r0/G.S0" BEL
+        "coll/ramx[7].ramx/ramx[2].r0/F.S0" BEL
+        "coll/ramx[7].ramx/ramx[2].r0/F.S1" BEL
+        "coll/ramx[7].ramx/ramx[2].r0/G.S1" BEL
+        "coll/ramx[7].ramx/ramx[3].r0/G.S0" BEL
+        "coll/ramx[7].ramx/ramx[3].r0/F.S0" BEL
+        "coll/ramx[7].ramx/ramx[3].r0/F.S1" BEL
+        "coll/ramx[7].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[0].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[0].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[0].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[0].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[1].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[1].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[1].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[1].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[2].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[2].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[2].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[2].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[3].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[3].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[3].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[3].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[4].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[4].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[4].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[4].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[5].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[5].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[5].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[5].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[6].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[6].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[6].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[6].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[7].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[7].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[7].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[7].ramx/ramx[5].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[0].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[0].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[0].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[0].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[1].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[1].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[1].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[1].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[2].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[2].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[2].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[2].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[3].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[3].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[3].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[3].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[4].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[4].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[4].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[4].r0/G.S1" BEL
+        "occ/ramx[8].ramx/ramx[5].r0/G.S0" BEL
+        "occ/ramx[8].ramx/ramx[5].r0/F.S0" BEL
+        "occ/ramx[8].ramx/ramx[5].r0/F.S1" BEL
+        "occ/ramx[8].ramx/ramx[5].r0/G.S1" BEL "vga_clk_BUFG.GCLKMUX" BEL
+        "vga_clk_BUFG" PIN "sprimg/ram0_pins<28>" PIN "sprimg/ram0_pins<29>"
+        PIN "sprimg/ram0_pins<28>" PIN "sprimg/ram0_pins<29>" PIN
+        "sprimg/ram1_pins<28>" PIN "sprimg/ram1_pins<29>" PIN
+        "sprimg/ram1_pins<28>" PIN "sprimg/ram1_pins<29>" PIN
+        "sprimg/ram2_pins<28>" PIN "sprimg/ram2_pins<29>" PIN
+        "sprimg/ram2_pins<28>" PIN "sprimg/ram2_pins<29>" PIN
+        "sprimg/ram3_pins<28>" PIN "sprimg/ram3_pins<29>" PIN
+        "sprimg/ram3_pins<28>" PIN "sprimg/ram3_pins<29>" PIN
+        "sprimg/ram4_pins<28>" PIN "sprimg/ram4_pins<29>" PIN
+        "sprimg/ram4_pins<28>" PIN "sprimg/ram4_pins<29>" PIN
+        "sprimg/ram5_pins<28>" PIN "sprimg/ram5_pins<29>" PIN
+        "sprimg/ram5_pins<28>" PIN "sprimg/ram5_pins<29>" PIN
+        "sprimg/ram6_pins<28>" PIN "sprimg/ram6_pins<29>" PIN
+        "sprimg/ram6_pins<28>" PIN "sprimg/ram6_pins<29>" PIN
+        "sprimg/ram7_pins<28>" PIN "sprimg/ram7_pins<29>" PIN
+        "sprimg/ram7_pins<28>" PIN "sprimg/ram7_pins<29>" PIN
+        "chars/ram0_pins<26>" PIN "chars/ram0_pins<27>" PIN
+        "chars/ram0_pins<26>" PIN "chars/ram0_pins<27>" PIN
+        "chars/ram1_pins<26>" PIN "chars/ram1_pins<27>" PIN
+        "chars/ram1_pins<26>" PIN "chars/ram1_pins<27>" PIN
+        "picture/ram0_pins<24>" PIN "picture/ram0_pins<25>" PIN
+        "picture/ram0_pins<24>" PIN "picture/ram0_pins<25>" PIN
+        "picture/ram1_pins<24>" PIN "picture/ram1_pins<25>" PIN
+        "picture/ram1_pins<24>" PIN "picture/ram1_pins<25>" PIN
+        "charpalette/ram_pins<21>" PIN "charpalette/ram_pins<22>" PIN
+        "charpalette/ram_pins<21>" PIN "charpalette/ram_pins<22>" PIN
+        "sprpal/ram_pins<21>" PIN "sprpal/ram_pins<22>" PIN
+        "sprpal/ram_pins<21>" PIN "sprpal/ram_pins<22>" PIN
+        "composer_pins<20>" PIN "composer_pins<21>" PIN "composer_pins<20>"
+        PIN "composer_pins<21>" PIN "sprval/ram_pins<20>" PIN
+        "sprval/ram_pins<21>" PIN "sprval/ram_pins<20>" PIN
+        "sprval/ram_pins<21>" BEL "palette4h/ramx[0].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[1].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[2].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[3].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[4].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[5].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[6].ramx/hi_Narrowed" BEL
+        "palette4h/ramx[7].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[0].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[1].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[2].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[3].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[4].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[5].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[6].ramx/hi_Narrowed" BEL
+        "palette4l/ramx[7].ramx/hi_Narrowed";
+PIN vga_ck_gen/DCM_inst/DCM_SP_pins<3> = BEL "vga_ck_gen/DCM_inst/DCM_SP"
+        PINNAME CLKIN;
+TIMEGRP CLKA = PIN "vga_ck_gen/DCM_inst/DCM_SP_pins<3>";
+TS_clk = PERIOD TIMEGRP "CLKA" 40 ns HIGH 50%;
+TS_vga_clk1 = PERIOD TIMEGRP "vga_clk1" TS_clk / 2 HIGH 50%;
+SCHEMATIC END;
+

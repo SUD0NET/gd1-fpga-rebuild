@@ -1,0 +1,7 @@
+verilog work ../j1demo/verilog/ck_div.v
+verilog work ../j1demo/verilog/rams.v
+verilog work ../j1demo/verilog/uart.v
+verilog work ../verilog/fifo.v
+verilog work ../verilog/generated.v
+verilog work ../verilog/j0.v
+verilog work ../verilog/top.v

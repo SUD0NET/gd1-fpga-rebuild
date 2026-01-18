@@ -1,0 +1,7 @@
+INFILE=/home/sudonet/gameduino-test/gameduino-200a_par.ncd
+OUTFILE=/home/sudonet/gameduino-test/gameduino-200a.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s200a-4vq100
+WORKINGDIR=/home/sudonet/gameduino-test
+LICENSE=WebPack
+USER_INFO=213300038_0_0_915

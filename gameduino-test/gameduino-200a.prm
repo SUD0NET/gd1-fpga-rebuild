@@ -1,0 +1,14 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -s 2048 -p mcs -o gameduino-200a.mcs -u 0 gameduino-200a.bit 
+
+PROM gameduino-200a.prm map: Sun Jan 18 17:59:32 2026
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0002:4831     Jan 18 17:59:30 2026 gameduino-200a.bit

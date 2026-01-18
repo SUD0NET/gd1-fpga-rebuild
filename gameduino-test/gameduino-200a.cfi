@@ -1,0 +1,10 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE             1/18/2026 - 17:59
+SOURCE          gameduino-200a.mcs
+DEVICE          2048K
+DATA_WIDTH      8
+FILL_DATA       0xFF
+START_ADDRESS   0x00000000 END_ADDRESS 0x00024831 DIRECTION_UP   "gameduino-200a.bit" 3s200avq100

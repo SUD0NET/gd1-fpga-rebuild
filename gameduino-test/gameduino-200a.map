@@ -1,0 +1,202 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -timing -ol high -detail -pr b -register_duplication -w
+gameduino-200a.ngd 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Sun Jan 18 17:58:31 2026
+
+Mapping design into LUTs...
+Writing file gameduino-200a.ngm...
+Running directed packing...
+WARNING:Pack:266 - The function generator occ/ramx[2].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[2].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[2].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[2].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[8].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[8].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[8].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[8].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[3].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[3].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[3].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[3].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[4].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[4].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[4].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[4].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[5].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[5].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[5].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[5].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[0].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[0].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[0].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[0].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[6].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[6].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[6].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[6].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[1].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[1].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[1].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[1].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[7].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[7].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[7].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[7].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:c96693c6) REAL time: 5 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:c96693c6) REAL time: 5 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:ca00c09b) REAL time: 5 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:ba9b49ea) REAL time: 7 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:ba9b49ea) REAL time: 7 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:ba9b49ea) REAL time: 7 secs 
+
+Phase 7.3  Local Placement Optimization
+
+Phase 7.3  Local Placement Optimization (Checksum:426f9c6a) REAL time: 7 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:426f9c6a) REAL time: 7 secs 
+
+Phase 9.8  Global Placement
+........................
+.....................................................................................................
+..
+............................................................................................................................................................
+................
+................
+............................................
+..............................
+Phase 9.8  Global Placement (Checksum:21239478) REAL time: 22 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:21239478) REAL time: 22 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:c906e5b6) REAL time: 27 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:c906e5b6) REAL time: 27 secs 
+
+Total REAL time to Placer completion: 27 secs 
+Total CPU  time to Placer completion: 27 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net local_j1_read_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_data_rd_reg_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<chars/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<chars/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   21
+Logic Utilization:
+  Total Number Slice Registers:         663 out of   3,584   18%
+    Number used as Flip Flops:          639
+    Number used as Latches:              24
+  Number of 4 input LUTs:             3,148 out of   3,584   87%
+Logic Distribution:
+  Number of occupied Slices:          1,703 out of   1,792   95%
+    Number of Slices containing only related logic:   1,703 out of   1,703 100%
+    Number of Slices containing unrelated logic:          0 out of   1,703   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,315 out of   3,584   92%
+    Number used as logic:             1,945
+    Number used as a route-thru:        167
+    Number used as 16x1 RAMs:            25
+    Number used for Dual Port RAMs:     736
+      (Two LUTs used per Dual Port RAM)
+    Number used for 32x1 RAMs:          372
+      (Two LUTs used per 32x1 RAM)
+    Number used as Shift registers:      70
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 23 out of      68   33%
+    IOB Flip Flops:                       3
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of DCMs:                         1 out of       4   25%
+  Number of ICAPs:                        1 out of       1  100%
+  Number of DNA_PORTs:                    1 out of       1  100%
+  Number of ICAP_SPARTAN3As:              1 out of       1  100%
+  Number of MULT18X18SIOs:                7 out of      16   43%
+  Number of RAMB16BWEs:                  16 out of      16  100%
+
+Average Fanout of Non-Clock Nets:                3.77
+
+Peak Memory Usage:  774 MB
+Total REAL time to MAP completion:  30 secs 
+Total CPU time to MAP completion:   30 secs 
+
+Mapping completed.
+See MAP report file "gameduino-200a.mrp" for details.

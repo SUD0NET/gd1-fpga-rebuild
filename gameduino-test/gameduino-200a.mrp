@@ -1,0 +1,2384 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -timing -ol high -detail -pr b -register_duplication -w
+gameduino-200a.ngd 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Sun Jan 18 17:58:31 2026
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   21
+Logic Utilization:
+  Total Number Slice Registers:         663 out of   3,584   18%
+    Number used as Flip Flops:          639
+    Number used as Latches:              24
+  Number of 4 input LUTs:             3,148 out of   3,584   87%
+Logic Distribution:
+  Number of occupied Slices:          1,703 out of   1,792   95%
+    Number of Slices containing only related logic:   1,703 out of   1,703 100%
+    Number of Slices containing unrelated logic:          0 out of   1,703   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,315 out of   3,584   92%
+    Number used as logic:             1,945
+    Number used as a route-thru:        167
+    Number used as 16x1 RAMs:            25
+    Number used for Dual Port RAMs:     736
+      (Two LUTs used per Dual Port RAM)
+    Number used for 32x1 RAMs:          372
+      (Two LUTs used per 32x1 RAM)
+    Number used as Shift registers:      70
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 23 out of      68   33%
+    IOB Flip Flops:                       3
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of DCMs:                         1 out of       4   25%
+  Number of ICAPs:                        1 out of       1  100%
+  Number of DNA_PORTs:                    1 out of       1  100%
+  Number of ICAP_SPARTAN3As:              1 out of       1  100%
+  Number of MULT18X18SIOs:                7 out of      16   43%
+  Number of RAMB16BWEs:                  16 out of      16  100%
+
+Average Fanout of Non-Clock Nets:                3.77
+
+Peak Memory Usage:  774 MB
+Total REAL time to MAP completion:  30 secs 
+Total CPU time to MAP completion:   30 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator occ/ramx[2].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[2].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[2].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[2].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[8].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[8].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[8].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[8].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[3].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[3].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[3].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[3].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[4].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[4].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[4].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[4].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[5].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[5].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[5].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[5].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[0].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[0].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[0].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[0].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[6].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[6].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[6].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[6].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[1].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[1].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[1].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[1].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator occ/ramx[7].ramx/r6 failed to merge
+   with F5 multiplexer occ/ramx[7].ramx/Mmux__COND_109_3_f5.  The function
+   generator occ/ramx[7].ramx/r6 is unable to be placed in the G position
+   because the output signal doesn't match other symbols' use of the G signal. 
+   The signal occ/ramx[7].ramx/Mmux__COND_109_5 already uses G.  The design will
+   exhibit suboptimal timing.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net local_j1_read_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_data_rd_reg_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<chars/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<chars/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<picture/ram0>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<picture/ram1>:<RAMB16BWE_RAMB16BWE>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network j/Mram_rstack31/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack30/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack32/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack28/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack27/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack29/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack26/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack25/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack24/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack23/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack21/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack20/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack22/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack18/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack17/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack19/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack15/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack14/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack16/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack13/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack12/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack11/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack10/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack8/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack7/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack9/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack6/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack5/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack4/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack3/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack1/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_rstack2/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack32/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack30/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack29/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack31/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack27/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack26/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack28/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack24/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack23/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack25/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack22/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack21/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack20/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack19/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack17/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack16/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack18/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack14/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack13/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack15/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack11/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack10/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack12/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack9/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack8/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack7/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack6/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack4/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack3/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack5/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack2/SPO has no load.
+INFO:LIT:243 - Logical network j/Mram_dstack1/SPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[0].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[1].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[2].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[3].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[4].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[5].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[6].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4h/ramx[7].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[0].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[1].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[2].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[3].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[4].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[5].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[6].ramx/hi/DPO has no load.
+INFO:LIT:243 - Logical network palette4l/ramx[7].ramx/hi/DPO has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   vga_ck_gen/DCM_inst/DCM_SP, consult the device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   5 block(s) removed
+   5 block(s) optimized away
+ 304 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "s2/srl16[20].fifo16" (SRLC16E) removed.
+Loadless block "s2/srl16[21].fifo16" (SRLC16E) removed.
+Loadless block "s2/srl16[22].fifo16" (SRLC16E) removed.
+Loadless block "s2/srl16[23].fifo16" (SRLC16E) removed.
+Loadless block "s2/srl16[24].fifo16" (SRLC16E) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LOCALBUF 		spi1/raddr<6>1/LUT3_D_BUF
+LOCALBUF 		spi1/raddr<7>1/LUT3_D_BUF
+LOCALBUF 		spi1/raddr<4>1/LUT3_D_BUF
+LOCALBUF 		spi1/raddr<3>1/LUT3_D_BUF
+LOCALBUF 		spi1/raddr<2>1/LUT3_D_BUF
+LOCALBUF 		spi1/raddr<1>1/LUT3_D_BUF
+LOCALBUF 		_and00061/LUT2_D_BUF
+LOCALBUF 		jinsn_wr/LUT4_D_BUF
+LOCALBUF 		voicefh_wr1/LUT4_D_BUF
+LOCALBUF 		j/_pc<4>8/LUT3_L_BUF
+LOCALBUF 		scrollx_7_not000111/LUT4_D_BUF
+LOCALBUF 		sample_l_15_not000111/LUT4_D_BUF
+LOCALBUF 		bg_color_14_not00011/LUT4_D_BUF
+LOCALBUF 		j/_st0_cmp_eq00121/LUT4_D_BUF
+LOCALBUF 		j/_st0_cmp_eq00051/LUT4_D_BUF
+LOCALBUF 		occ_addr<6>1/LUT3_D_BUF
+LOCALBUF 		palette4_wr1/LUT4_D_BUF
+LOCALBUF 		palette16_wr1/LUT4_D_BUF
+LOCALBUF 		bg_color_14_not000111_SW1/LUT4_L_BUF
+LOCALBUF 		j/insn_addr<5>1/LUT3_D_BUF
+LOCALBUF 		j/_st0_cmp_eq00151/LUT4_D_BUF
+LOCALBUF 		j/_st0_cmp_eq00081/LUT4_D_BUF
+LOCALBUF 		j/_st0_cmp_eq00071/LUT4_D_BUF
+LOCALBUF 		j/_pc<5>19/LUT3_L_BUF
+LOCALBUF 		j/Sh141/LUT4_D_BUF
+LOCALBUF 		j/inst_LPM_MUX1911/LUT3_D_BUF
+LOCALBUF 		j/inst_LPM_MUX1811/LUT3_D_BUF
+LOCALBUF 		j/Mmux_st0sel41/LUT3_D_BUF
+LOCALBUF 		j/Mmux_st0sel31/LUT3_D_BUF
+LOCALBUF 		j/Mmux_st0sel11/LUT3_D_BUF
+LOCALBUF 		j/Sh931/LUT3_D_BUF
+LOCALBUF 		j/Sh831/LUT3_D_BUF
+LOCALBUF 		j/Sh1231/LUT3_D_BUF
+LOCALBUF 		j/Sh1131/LUT3_D_BUF
+LOCALBUF 		j/Sh1031/LUT3_D_BUF
+LOCALBUF 		j/_st0<0>37/LUT3_L_BUF
+LOCALBUF 		j/Madd_pc_plus_1_cy<4>11/LUT3_D_BUF
+LOCALBUF 		j/Madd_pc_plus_1_cy<2>11/LUT3_D_BUF
+LOCALBUF 		j/Madd_pc_plus_1_xor<6>11/LUT3_D_BUF
+LOCALBUF 		j/_st0<4>18/LUT4_L_BUF
+LOCALBUF 		j/_st0<4>68/LUT4_L_BUF
+LOCALBUF 		j/_st0<5>18/LUT4_L_BUF
+LOCALBUF 		j/_st0<5>68/LUT4_L_BUF
+LOCALBUF 		j/inst_LPM_MUX1711/LUT3_D_BUF
+LOCALBUF 		j/Mmux_st0sel21/LUT3_D_BUF
+LOCALBUF 		j/_pc_or000021/LUT2_D_BUF
+LOCALBUF 		j/_pc_or000011/LUT2_D_BUF
+LOCALBUF 		jinsnl/ram7/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram6/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram5/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram4/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram3/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram2/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnl/ram1/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram6/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram5/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram4/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram3/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram2/DPO12/LUT4_L_BUF
+LOCALBUF 		jinsnh/ram1/DPO12/LUT4_L_BUF
+LOCALBUF 		j/_pc_or000055/LUT4_L_BUF
+LOCALBUF 		j/_pc_or0000100/LUT2_L_BUF
+LOCALBUF 		j/_st0<6>21/LUT4_L_BUF
+LOCALBUF 		j/_st0<6>97/LUT4_L_BUF
+LOCALBUF 		j/_st0<6>147/LUT4_L_BUF
+LOCALBUF 		j/_st0<7>2/LUT2_L_BUF
+LOCALBUF 		j/_st0<7>68/LUT4_L_BUF
+LOCALBUF 		j/_st0<13>18/LUT3_L_BUF
+LOCALBUF 		j/_st0<13>53/LUT3_L_BUF
+LOCALBUF 		j/_st0<13>105/LUT4_L_BUF
+LOCALBUF 		j/_st0<12>18/LUT3_L_BUF
+LOCALBUF 		j/_st0<12>53/LUT3_L_BUF
+LOCALBUF 		j/_st0<12>105/LUT4_L_BUF
+LOCALBUF 		j/_st0<10>23/LUT4_L_BUF
+LOCALBUF 		j/_st0<10>91/LUT4_L_BUF
+LOCALBUF 		j/_st0<14>18/LUT3_L_BUF
+LOCALBUF 		j/_st0<14>59/LUT4_L_BUF
+LOCALBUF 		j/_st0<14>87/LUT4_L_BUF
+LOCALBUF 		j/_st0<15>65/LUT4_L_BUF
+LOCALBUF 		j/_st0<15>80/LUT3_L_BUF
+LOCALBUF 		_and0004108/LUT3_D_BUF
+LOCALBUF 		j/rstkD<1>11/LUT2_D_BUF
+LOCALBUF 		Madd_sin_addsub0000_cy<2>11/LUT3_D_BUF
+LOCALBUF 		Madd_viN_cy<3>11/LUT4_D_BUF
+LOCALBUF 		Madd_sin_addsub0000_cy<4>11_SW2/LUT3_L_BUF
+LOCALBUF 		coll_rd18/LUT4_D_BUF
+LOCALBUF 		j/Maddsub__dsp_share0000_lut<0>/LUT4_L_BUF
+LOCALBUF 		j/Maddsub__dsp_share0000_cy<1>11/LUT4_D_BUF
+LOCALBUF 		j/_dsp<4>_SW0/LUT4_L_BUF
+LOCALBUF 		sin<5>1_SW0/LUT4_L_BUF
+LOCALBUF 		coll_scrub115_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<2>141/LUT4_L_BUF
+LOCALBUF 		j/_st0<1>141/LUT4_L_BUF
+LOCALBUF 		j/_st0<15>106/LUT4_L_BUF
+LOCALBUF 		j/_st0<14>123/LUT4_L_BUF
+LOCALBUF 		coll_scrub18/LUT4_L_BUF
+LOCALBUF 		j/_st0<0>233/LUT4_D_BUF
+LOCALBUF 		j/_pc<3>53_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<7>125/LUT3_L_BUF
+LOCALBUF 		j/_st0<3>171/LUT3_L_BUF
+LOCALBUF 		j/_st0<2>176/LUT4_L_BUF
+LOCALBUF 		j/_st0<1>176/LUT4_L_BUF
+LOCALBUF 		j/_st0<4>136/LUT3_L_BUF
+LOCALBUF 		j/_st0<5>136/LUT3_L_BUF
+LOCALBUF 		_wavecounter<6>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<5>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<4>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<3>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<2>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<1>21/LUT3_L_BUF
+LOCALBUF 		_wavecounter<0>21/LUT3_L_BUF
+LOCALBUF 		j/_st0<5>145/LUT4_L_BUF
+LOCALBUF 		j/_st0<8>36/LUT4_L_BUF
+LOCALBUF 		j/_st0<9>36/LUT4_L_BUF
+LOCALBUF 		j/_st0<11>36/LUT4_L_BUF
+LOCALBUF 		j/_st0<4>145/LUT4_L_BUF
+LOCALBUF 		j/_st0<3>180/LUT4_L_BUF
+LOCALBUF 		j/_st0<3>12/LUT3_L_BUF
+LOCALBUF 		j/_st0<2>12/LUT3_L_BUF
+LOCALBUF 		j/_st0<1>12/LUT3_L_BUF
+LOCALBUF 		j/_st0<0>162/LUT4_L_BUF
+LOCALBUF 		j/Madd__rsp_share0000_cy<1>11/LUT4_D_BUF
+LOCALBUF 		mem_w_addr<9>1/LUT4_D_BUF
+LOCALBUF 		Msub_s3_yoffset_cy<1>11/LUT4_D_BUF
+LOCALBUF 		j/_st0<0>85/LUT4_L_BUF
+LOCALBUF 		j/_st0<13>9_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<12>9_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<14>9_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<15>6_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<2>71/LUT4_L_BUF
+LOCALBUF 		j/_st0<1>71/LUT4_L_BUF
+LOCALBUF 		j/_st0<8>122_SW0/LUT4_L_BUF
+LOCALBUF 		j/_pc<4>14/LUT4_D_BUF
+LOCALBUF 		j/_pc<6>76_SW0/LUT4_D_BUF
+LOCALBUF 		_and000473_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<8>158_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<11>158_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<10>158_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<9>158_SW0/LUT4_L_BUF
+LOCALBUF 		mem_addr<1>_SW0/LUT3_D_BUF
+LOCALBUF 		j/_dsp<2>1_SW0/LUT4_L_BUF
+LOCALBUF 		j/_dsp<3>1_SW0/LUT4_L_BUF
+LOCALBUF 		j/_st0<3>100/LUT4_L_BUF
+LOCALBUF 		j/rstkD<1>21/LUT3_D_BUF
+LOCALBUF 		j/mem_wr1/LUT4_D_BUF
+LOCALBUF 		voicefh/ramx[0].ramx/lo/_and000111/LUT4_D_BUF
+LOCALBUF 		voicefh/ramx[0].ramx/lo/_and000011/LUT4_D_BUF
+LOCALBUF 		voicefh/ramx[0].ramx/hi/_and000111/LUT4_D_BUF
+LOCALBUF 		voicefh/ramx[0].ramx/hi/_and000011/LUT4_D_BUF
+LOCALBUF 		j/rstkD<6>29_SW0/LUT4_L_BUF
+LOCALBUF 		s1_valid_1/LUT4_L_BUF
+LOCALBUF 		Madd_viN_cy<3>11_1/LUT4_L_BUF
+LUT1 		Madd_yy_addsub0000_cy<2>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<2>_rt
+LUT1 		Madd_yy_addsub0000_cy<3>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<3>_rt
+LUT1 		Madd_yy_addsub0000_cy<4>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<4>_rt
+LUT1 		Madd_yy_addsub0000_cy<5>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<5>_rt
+LUT1 		Madd_yy_addsub0000_cy<6>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<6>_rt
+LUT1 		Madd_yy_addsub0000_cy<7>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<7>_rt
+LUT1 		Madd_yy_addsub0000_cy<8>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<8>_rt
+LUT1 		Madd_yy_addsub0000_cy<9>_rt
+LUT1 		Madd__CounterY_addsub0000_xor<9>_rt
+LUT1 		Madd_dN_cy<12>_rt
+LUT1 		Maccum_d_cy<12>_rt
+LUT1 		Madd_dN_cy<13>_rt
+LUT1 		Maccum_d_cy<13>_rt
+LUT1 		Madd_dN_cy<14>_rt
+LUT1 		Maccum_d_cy<14>_rt
+LUT1 		Madd_dN_cy<15>_rt
+LUT1 		Maccum_d_cy<15>_rt
+LUT1 		Madd_dN_cy<17>_rt
+LUT1 		Maccum_d_cy<17>_rt
+LUT1 		Madd_dN_cy<19>_rt
+LUT1 		Maccum_d_cy<19>_rt
+LUT1 		Madd_dN_cy<20>_rt
+LUT1 		Maccum_d_cy<20>_rt
+LUT1 		Madd_dN_cy<21>_rt
+LUT1 		Maccum_d_cy<21>_rt
+LUT1 		Madd_dN_cy<23>_rt
+LUT1 		Maccum_d_cy<23>_rt
+LUT1 		Madd_dN_cy<25>_rt
+LUT1 		Maccum_d_cy<25>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<16>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<17>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<18>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<19>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<20>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<21>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<22>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<23>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<24>_rt
+LUT1 		Madd_freqdN_addsub0000_cy<25>_rt
+LUT1 		Madd__CounterY_addsub0000_cy<1>_rt
+LUT1 		Msub_yyline_cy<1>_rt
+LUT1 		Msub_comp_write_addsub0000_cy<0>_rt
+LUT1 		Msub_comp_write_addsub0000_cy<1>_rt
+LUT1 		Mcount_comp_workcnt_cy<1>_rt
+LUT1 		Mcompar_s3_state_cmp_lt0000_cy<2>_rt
+LUT1 		Mcompar_composite_complete_cmp_gt0000_cy<1>_rt
+LUT1 		Mcount_comp_workcnt_cy<4>_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<0>_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<0>_0_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<0>_1_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<0>_2_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<2>_0_rt
+LUT1 		Mcount_CounterX_cy<5>_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<4>_0_rt
+LUT1 		Mcount_CounterX_cy<6>_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<2>_2_rt
+LUT1 		Mcount_CounterX_cy<2>_rt
+LUT1 		Mcompar_vga_active_cmp_le0000_cy<4>_1_rt
+LUT1 		Mcount_CounterX_cy<4>_rt
+LUT1 		Mcount_CounterX_cy<1>_rt
+LUT1 		Mcount_CounterX_cy<3>_rt
+LUT1 		Mcount_CounterX_cy<7>_rt
+LUT1 		Mcount_CounterX_cy<8>_rt
+LUT1 		Mcount_CounterX_cy<9>_rt
+LUT1 		Mcount_frames_cy<1>_rt
+LUT1 		Mcount_frames_cy<2>_rt
+LUT1 		Mcount_frames_cy<3>_rt
+LUT1 		Mcount_frames_cy<4>_rt
+LUT1 		Mcount_frames_cy<5>_rt
+LUT1 		Mcount_frames_cy<6>_rt
+LUT1 		Mcount_comp_workcnt_cy<2>_rt
+LUT1 		Mcount_comp_workcnt_cy<3>_rt
+LUT1 		Mcount_comp_workcnt_cy<5>_rt
+LUT1 		Mcount_comp_workcnt_cy<6>_rt
+LUT1 		Mcount_comp_workcnt_cy<7>_rt
+LUT1 		Mcount_comp_workcnt_cy<8>_rt
+LUT1 		Mcount_comp_workcnt_cy<9>_rt
+LUT1 		Mcount_comp_workcnt_cy<10>_rt
+LUT1 		Mcount_comp_workcnt_cy<11>_rt
+LUT1 		Mcount_soundcounter_cy<1>_rt
+LUT1 		Mcount_soundcounter_cy<2>_rt
+LUT1 		Mcount_soundcounter_cy<3>_rt
+LUT1 		Mcount_soundcounter_cy<4>_rt
+LUT1 		Mcount_soundcounter_cy<5>_rt
+LUT1 		Mcount_soundcounter_cy<6>_rt
+LUT1 		Mcount_soundcounter_cy<7>_rt
+LUT1 		Mcount_soundcounter_cy<8>_rt
+LUT1 		Mcount_soundcounter_cy<9>_rt
+LUT1 		Mcount_soundcounter_cy<10>_rt
+LUT1 		Mcount_soundcounter_cy<11>_rt
+LUT1 		Mcount_soundcounter_cy<12>_rt
+LUT1 		Mcount_soundcounter_cy<13>_rt
+LUT1 		Mcount_soundcounter_cy<14>_rt
+LUT1 		Mcount_s1_count_cy<1>_rt
+LUT1 		Mcount_s1_count_cy<2>_rt
+LUT1 		Mcount_s1_count_cy<3>_rt
+LUT1 		Mcount_s1_count_cy<4>_rt
+LUT1 		Mcount_s1_count_cy<5>_rt
+LUT1 		Mcount_s1_count_cy<6>_rt
+LUT1 		Mcount_s1_count_cy<7>_rt
+LUT1 		Mcount_freqtick_cy<1>_rt
+LUT1 		Mcount_freqtick_cy<2>_rt
+LUT1 		Mcount_freqtick_cy<3>_rt
+LUT1 		Mcount_freqtick_cy<4>_rt
+LUT1 		Mcount_freqtick_cy<5>_rt
+LUT1 		Mcount_freqtick_cy<6>_rt
+LUT1 		Mcount_soundmaster_cy<1>_rt
+LUT1 		Mcount_soundmaster_cy<2>_rt
+LUT1 		Mcount_soundmaster_cy<3>_rt
+LUT1 		Mcount_soundmaster_cy<4>_rt
+LUT1 		Mcount_soundmaster_cy<5>_rt
+LUT1 		Mcount_soundmaster_cy<6>_rt
+LUT1 		Mcount_soundmaster_cy<7>_rt
+LUT1 		Mcount_soundmaster_cy<8>_rt
+LUT1 		Mcount_soundmaster_cy<9>_rt
+LUT1 		Mcount_soundmaster_cy<10>_rt
+LUT1 		Mcount_soundmaster_cy<11>_rt
+LUT1 		Mcount_soundmaster_cy<12>_rt
+LUT1 		Mcount_soundmaster_cy<13>_rt
+LUT1 		Mcount_soundmaster_cy<14>_rt
+LUT1 		Mcount_soundmaster_cy<15>_rt
+LUT1 		Msub_yy_cy<0>_rt
+LUT1 		Msub_yyline_cy<0>_rt
+LUT1 		Msub_yy_cy<1>_rt
+LUT1 		Msub_yy_cy<2>_rt
+LUT1 		Msub_yy_cy<3>_rt
+LUT1 		Msub_yy_cy<4>_rt
+LUT1 		Msub_yy_cy<5>_rt
+LUT1 		Madd_freqdN_addsub0000_xor<26>_rt
+LUT1 		Mcount_CounterX_xor<10>_rt
+LUT1 		Mcount_frames_xor<7>_rt
+LUT1 		Mcount_comp_workcnt_xor<12>_rt
+LUT1 		Mcount_soundcounter_xor<15>_rt
+LUT1 		Mcount_s1_count_xor<8>_rt
+LUT1 		Mcount_freqtick_xor<7>_rt
+LUT1 		Mcount_soundmaster_xor<16>_rt
+INV 		Mcompar_s3_state_cmp_lt0000_cy<5>_inv_INV_0
+INV 		Mcompar_vga_active_cmp_le0000_cy<7>_inv_INV_0
+INV 		vga_vsync_n1_INV_0
+INV 		vga_hsync_n1_INV_0
+INV 		spi1/_count<0>1_INV_0
+INV 		Mcount_s3_state_xor<0>11_INV_0
+INV 		vga_HS_cmp_le0000_inv1_INV_0
+INV 		dN<27>_inv1_INV_0
+INV 		freqdN<26>_inv1_INV_0
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AUDIOL                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| AUDIOR                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| AUX                                | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| MISO                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| MOSI                               | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| SCK                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| SSEL                               | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| clka                               | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| flashMISO                          | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| flashMOSI                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| flashSCK                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| flashSSEL                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_blue<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_blue<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_blue<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_green<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_green<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_green<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_hsync_n                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_red<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_red<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_red<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| vga_vsync_n                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+MULT18X18SIO "Mmult_derived_mult0000":
+AREG:0
+BREG:0
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+MULT18X18SIO "Mmult_derived_mult00001":
+AREG:0
+BREG:0
+B_INPUT:CASCADE
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+MULT18X18SIO "Mmult_lmodulated_mult0000":
+AREG:0
+BREG:0
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+MULT18X18SIO "Mmult_lprod_mult0001":
+AREG:1
+BREG:1
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+MULT18X18SIO "Mmult_rmodulated_mult0000":
+AREG:0
+BREG:0
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+MULT18X18SIO "Mmult_rprod_mult0001":
+AREG:1
+BREG:1
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+RAMB16BWE "charpalette/ram":
+DATA_WIDTH_A:9
+DATA_WIDTH_B:18
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_01 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_02 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_03 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_04 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_05 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_06 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_07 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_08 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_09 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0A = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0B = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0C = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0D = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0E = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_0F = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_10 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_11 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_12 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_13 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_14 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_15 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_16 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_17 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_18 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_19 = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1A = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1B = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1C = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1D = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1E = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_1F = 7FFF0000000080007FFF0000000080007FFF0000000080007FFF000000008000
+INIT_20 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_21 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_22 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_23 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_24 = 0000000000008000000000000000800000000000000080000000000000008000
+INIT_25 = 00002175800010AA00000000800010AA00000000000080000000000000008000
+INIT_26 = 00002175800010AA00002175800010AA00000000800010AA00002175800010AA
+INIT_27 = 00002175800010AA00002175800010AA00002175800010AA00002175800010AA
+INIT_28 = 00002175800010AA00002175800010AA00002175800010AA00002175800010AA
+INIT_29 = 000000002CA5800020842CA58000184200002175800010AA00002175800010AA
+INIT_2A = 00000000217510AA00002175800010AA20842CA58000184220842CA580001842
+INIT_2B = 00002175800010AA00000000217510AA00002175800010AA00002175800010AA
+INIT_2C = 00002175800010AA00002CA580001842000000002CA5800020842CA580001842
+INIT_2D = 00002175800010AA00002175800010AA00002175800010AA00002175800010AA
+INIT_2E = 20842CA580001842000000002CA58000000000002CA5800000002175800010AA
+INIT_2F = 00000000800010AA00002175800010AA00000000800010AA20842CA580001842
+INIT_30 = 000000000000000000000000800010AA00002175800010AA00000000800010AA
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "chars/ram0":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:4
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 00FFFFFF0000000000FFF7100000000000300000000000000000000000000000
+INIT_01 = 00FFEFCF000000000070300000000000CF0E00000000000000FFFF0E00000000
+INIT_02 = 0F00000000000000FF00000000000000F1000000000000000800000000000000
+INIT_03 = F3F00000000000008F0E08000000000000000000000000FF00000000F1701000
+INIT_04 = 0000EFEFCF8F00000000F07030000000CF030000000000000F0C000000000000
+INIT_05 = 0000000000EFCF0F00000000007E3E0C000000FFEFC300000000F03000000000
+INIT_06 = 00000000008F0F0C0000000000FFF7F300FFFFCF00000000007E1C0800000000
+INIT_07 = 00000000FFEF8F0E00000000FFF7F3F00070301000000000000F000000000000
+INIT_08 = 006363F763F763630000000000C6C6C600810081818181810000000000000000
+INIT_09 = 00000000000381C000B366D683C6C6830060660381C066060081E7B0E386F3C0
+INIT_0A = 00008181E7818100000081E7C3E78100000381C0C0C0810300C08103030381C0
+INIT_0B = 0000060381C06000008181000000000000000000E70000000381810000000000
+INIT_0C = 00C36660C16066C300E70381C06066C300E781818181838100C36667E7E666C3
+INIT_0D = 0003030381C060E700C36666C70603C100C3666060C706E700C0C0E7C6C3C1C0
+INIT_0E = 038181008181000000818100818100000083C060E36666C300C36666C36666C3
+INIT_0F = 0081008181C066C3000381C060C08103000000E700E7000000C08103060381C0
+INIT_10 = 00C36606060666C300C76666C76666C700666666E76666C300C306E6A6E666C3
+INIT_11 = 00C36666E60666C300060606C70606E700E70606C70606E70087C6666666C687
+INIT_12 = 0066C6870787C6660083C6C0C0C0C0E300E78181818181E700666666E7666666
+INIT_13 = 00C36666666666C3006666E6E7676666003636B6B6F7773600E7060606060606
+INIT_14 = 00C36660C30666C3006666C6C76666C70063C6A6666666C300060606C76666C7
+INIT_15 = 003677F7B6B636360081C3666666666600C366666666666600818181818181E7
+INIT_16 = 00C70606060606C700E7060381C060E700818181C3666666006666C381C36666
+INIT_17 = FF00000000000000000000002466C38100E36060606060E3000060C081030600
+INIT_18 = 00C3660666C3000000C7666666C7060600E366E360C3000000E70303C70363C1
+INIT_19 = C360E36666E3000000030303C70303C100C306E766C3000000E3666666E36060
+INIT_1A = 0066C687C6660606078181818183008100C38181818300810066666666C70606
+INIT_1B = 00C3666666C300000066666666C700000036B6B6F763000000C3818181818183
+INIT_1C = 00C760C306E300000006060667C600007060E36666E300000606C76666C70000
+INIT_1D = 0063F7B6B63600000081C3666666000000E366666666000000C1030303C70303
+INIT_1E = 00C08181078181C000E70381C0E70000C360E366666600000066C381C3660000
+INIT_1F = FFFFFFFFFFFFFFFF000000000064B61300038181E08181030081818100818181
+INIT_20 = 0F0E0800000000000000000000000C00000000000000FFFF00000000F1F03000
+INIT_21 = 000000000000FFEF0000000000703010000000000008000000000000000000CF
+INIT_22 = F0F0F070707070700C080808000000007030303030101000000000000E0C0800
+INIT_23 = 10303030707070700C0C0C0C0E0E0E0E70F0F0F0F0F0F0F00E0E0E0E0E0C0C0C
+INIT_24 = 000000000000000E8F0000000000000000000000000000100000000000080808
+INIT_25 = 0F8F8F8F8FCFFFFFF9FFFFFFFFFFFFFF00000030000000000000000000000800
+INIT_26 = 08080000000070F0FFFFFFEFCFCFEFFF9FFFFFFFFFFFFFFFF0F1F1F1F1F3FFFF
+INIT_27 = FFFFFFF7F3F3F7FF1010000000000E0F00000000000010F0000000000000080F
+INIT_28 = CFCFCF8F0F080000F3F3F3F1F01000000000000000000808080CEFEFFFFFFFFF
+INIT_29 = 0F0F0F0F0F0000001C0C0ECFEFFFFFFF1030F7F7FFFFFFFF0000000000001010
+INIT_2A = F7F7FFFFFFFFFFFFFFFFEF0F0C0808081E1C0030B1FFFFFF7838000C8DFFFFFF
+INIT_2B = FFFFF7F030101010EFEFFFFFFFFFFFFF0F8F8FCFCFEFEFEFF0F1F1F3F3F7F7F7
+INIT_2C = CFEFFFFFFFFFFFFF0F0F0F0F0F0F0F0E0F0F0F0F0F0F0F0FFFFFFFFFFFFFFC3C
+INIT_2D = 00000010101010008F8F8F0F0F0F0E0EF1F1F1F0F0F070700000000808080800
+INIT_2E = FFFF8D0C00B878F0000083838300000000000F0F0F0F0F0FF3F7FFFFFFFFFFFF
+INIT_2F = FFFFFFFFFFFFFFF3FFFFFFFFFFF97030FFFFFFFFFFFFFFEFFFFFB130001C1E0E
+INIT_30 = 0000000000000000FFFFFFFFFFFFFFF7FFFFFFFFFF9F0E0CFFFFFFFFFFFFFFCF
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "chars/ram1":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:4
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 006363F763F763630000000000C6C6C600810081818181810000000000000000
+INIT_09 = 00000000000381C000B366D683C6C6830060660381C066060081E7B0E386F3C0
+INIT_0A = 00008181E7818100000081E7C3E78100000381C0C0C0810300C08103030381C0
+INIT_0B = 0000060381C06000008181000000000000000000E70000000381810000000000
+INIT_0C = 00C36660C16066C300E70381C06066C300E781818181838100C36667E7E666C3
+INIT_0D = 0003030381C060E700C36666C70603C100C3666060C706E700C0C0E7C6C3C1C0
+INIT_0E = 038181008181000000818100818100000083C060E36666C300C36666C36666C3
+INIT_0F = 0081008181C066C3000381C060C08103000000E700E7000000C08103060381C0
+INIT_10 = 00C36606060666C300C76666C76666C700666666E76666C300C306E6A6E666C3
+INIT_11 = 00C36666E60666C300060606C70606E700E70606C70606E70087C6666666C687
+INIT_12 = 0066C6870787C6660083C6C0C0C0C0E300E78181818181E700666666E7666666
+INIT_13 = 00C36666666666C3006666E6E7676666003636B6B6F7773600E7060606060606
+INIT_14 = 00C36660C30666C3006666C6C76666C70063C6A6666666C300060606C76666C7
+INIT_15 = 003677F7B6B636360081C3666666666600C366666666666600818181818181E7
+INIT_16 = 00C70606060606C700E7060381C060E700818181C3666666006666C381C36666
+INIT_17 = FF00000000000000000000002466C38100E36060606060E3000060C081030600
+INIT_18 = 00C3660666C3000000C7666666C7060600E366E360C3000000E70303C70363C1
+INIT_19 = C360E36666E3000000030303C70303C100C306E766C3000000E3666666E36060
+INIT_1A = 0066C687C6660606078181818183008100C38181818300810066666666C70606
+INIT_1B = 00C3666666C300000066666666C700000036B6B6F763000000C3818181818183
+INIT_1C = 00C760C306E300000006060667C600007060E36666E300000606C76666C70000
+INIT_1D = 0063F7B6B63600000081C3666666000000E366666666000000C1030303C70303
+INIT_1E = 00C08181078181C000E70381C0E70000C360E366666600000066C381C3660000
+INIT_1F = FFFFFFFFFFFFFFFF000000000064B61300038181E08181030081818100818181
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 7030303030000000000000000000000000000000000000000000000000000000
+INIT_26 = F3F3F7FFFF8F0F06000000001010000000000000000000000E0C0C0C0C000000
+INIT_27 = 0000000008080000CFCFEFFFFFF1F060FFFFFFFFFFEF0F0EFFFFFFFFFFF7F070
+INIT_28 = 1010103070F0F7FF0808080C0E0FEFFFFFFFFFFFF7F7F3F3F310000000000000
+INIT_29 = 0000000000000000C7E1F07030000000CF08000000000000FFFFFFFFEFEFCFCF
+INIT_2A = 000000000000000000000010F0F3F3F3F0F1EFEF8F0000000F8FF7F7F1000000
+INIT_2B = 000000080FCFCFCF000000000000000070303010100000000E0C0C0808000000
+INIT_2C = 1000000000000000F0F0F0F0F0F0F0F000000000000000000000000000000387
+INIT_2D = F3FFEFCFCFCFCFEF303030707070F0F00C0C0C0E0E0E0F0FCFFFF7F3F3F3F3F7
+INIT_2E = 0000F1F7F78F0F0F000000000000000000000000000000000800000000000000
+INIT_2F = 0000000000000000000000000000068F000000000000000000008FEFEFF1F0F0
+INIT_30 = 0000000000000000000000000000000000000000000060F10000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "composer":
+DATA_WIDTH_A:18
+DATA_WIDTH_B:18
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+MULT18X18SIO "j/Mmult__st0_mult0001":
+AREG:0
+BREG:1
+B_INPUT:DIRECT
+PREG:0
+PREG_CLKINVERSION:0
+
+
+
+RAMB16BWE "picture/ram0":
+DATA_WIDTH_A:4
+DATA_WIDTH_B:4
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 00000000000000000000BA900000000000008760000000000000005432100000
+INIT_0D = 0000000000000000003211100FEDC0BA098760005403201000F0E0D0000C0000
+INIT_0E = 00000000000000000000000000000000000000000000007654D0000000000D00
+INIT_0F = 0000000000000000800000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 00000000000000A0000000000000000000000000000000000000000000000009
+INIT_12 = 00000000000000C000000000000000000000000000000000000000000000000B
+INIT_13 = 00000000000000E000000000000000000000000000000000000000000000000D
+INIT_14 = 000000000000000000000000000000000000000000000000000000000000000F
+INIT_15 = 0000000000000000000000000000000000200000000000000000000000000001
+INIT_16 = 0000000000000000000000000000000000300000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000050000000000000000000000000000004000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000098760
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000FEDCBA
+INIT_22 = 0000000000000009807600000000000000000000000000000000000000543210
+INIT_23 = 0000000000000002101000000000000000000000000000000000000000FEDCBA
+INIT_24 = 000000000000000CBA9000000000000000000000000000000000000000876543
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000210FED
+INIT_26 = 00000000000000E414056FC0C5B21C30925B1A0CEF309D0F4091484292090018
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 000E8FAADD0E3EF93310025F905532500B3E2F3105C449C0DF2603B1F094879D
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 00000000007E94457025F90EF055EFC5D04E10C51839D0F403EF941C54127EF3
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 000000000000000000000000DF3E44F254417E7770D039EF2435C5044F254417
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = EFA526E7726EFA9E5EC6EFA9E927EF6EFA52F8A9849BBA9210280B0BE1965213
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000E9F20C56FC0E25650569704352058407E95202F603BE1840A9DD14
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 010254F39F27F305840DF260CCC10F407E9D170F245204E107E9B31809001801
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 000000000000000000000000000321C3E93415800BE1C07E17005665400B5D20
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 000000000000000000000000000000000DF3E3B3F2E17154060DF3E3B3F29217
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000E5EF057E1830F40541C0FF402565E0C569C01056180F40541C0FF402565E
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 00000000000000000000000000000000004CF80CC533520F403BE1840C193503
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000035B540B5254092045B3120435AF20
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = DDDDDDDDDDDDDDDDDDDD011020DF3EFE9545D1709380DDDDDDDDDDDDDDDDDDDD
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "picture/ram1":
+DATA_WIDTH_A:4
+DATA_WIDTH_B:4
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000008888880111101101111000110110100100000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000888800000000000100
+INIT_0F = 0000000000000000800000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000080000000000000000000000000000000000000000000000008
+INIT_12 = 0000000000000080000000000000000000000000000000000000000000000008
+INIT_13 = 0000000000000080000000000000000000000000000000000000000000000008
+INIT_14 = 0000000000000090000000000000000000000000000000000000000000000008
+INIT_15 = 0000000000000000000000000000000000900000000000000000000000000009
+INIT_16 = 0000000000000000000000000000000000900000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000090000000000000000000000000000009000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000099990
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000999999
+INIT_22 = 000000000000000AA0AA00000000000000000000000000000000000000AAAAAA
+INIT_23 = 000000000000000BB0BB00000000000000000000000000000000000000AAAAAA
+INIT_24 = 000000000000000BBBB000000000000000000000000000000000000000BBBBBB
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000CCCBBB
+INIT_26 = 2222222222222226662676622667664277666522667276267276667766277764
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 2226666622227666776727767267777523767666266776626676276662776664
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 2222222222666666727767266266666642666266666642672766676677676664
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 2222222222222222222222226662776767767277722266667766662776767765
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 5455554555154545555154545555551545554454554413233332245266676765
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 2222222222276522676422767626667277662667266666276627666652376665
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 2227666476676426652667622666267266666426776526662666666427776422
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 2222222222222222222222222227666667776664266667666642767664263444
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 2222222222222222222222222222222226662766656666652226662766657664
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 2222266626666662672676626672767642266662626766267267662667276764
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 2222222222222222222222222222222222766426667775267276666726666675
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 2222222222222222222222222222222222276674266764276266666627666675
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 2222222222222222222223333266626667666642242222222222222222222222
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram0":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0011000100230003000700C7000F011F003F063F0C7F18FF21FF43FF87FF8FFF
+INIT_01 = 000400040004000000028002800000018000C000C001800180008000C000C000
+INIT_02 = FFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF0FFF07FF03FF01FF01FF90FF
+INIT_03 = 3A0175003E817F50FFABFFD6FEA8FFD0FEA0FFC0FFA0FF00FE80FF00F600E400
+INIT_04 = F080F840F8A0FC10FC00FC00FC42FC40FC53FC6AFC55FC7FFC55FC7FFC7FFC7F
+INIT_05 = FFFFFFFF7FFF1FFF07FF01FF00FF883FE00FF107F081F0009C10D608F584F960
+INIT_06 = FFC1FF83FF07FC2FF85FF0BFC2FF05FF07FF2FFFBFFFFFFFFFFFFFFFFFF8FFED
+INIT_07 = 7FFF3FFF1FFF8FFF47FF03FF01FF80FF407FE23FF83FAC1FB80FBDC73FC3BFF1
+INIT_08 = FFFCFFFEFFFFFFFFFFFF5FFF80E75F81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_09 = 015F202A22013A015FFF3FFF57FF3FFF57FFBFFF5FFFBFFF7FFF97FFD7FF06C4
+INIT_0A = FA3E78030BFF55FF0ABF057F0ABF05FF02BF15FF02FF55FF9FC500000001FFFF
+INIT_0B = 0BFF05FF0BD417F007801000000F007F03FF0FFF3FFFFFFFFFFFFFFFFFFFFFF1
+INIT_0C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FF00F8008006008F04FF4FFF
+INIT_0D = FFE0FFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF07FF41FF407F280F360075806B50
+INIT_0E = FFC7FE0FFF1FFC1FFE3FFC3FFA3FFC7FF87FF800FC00F800F800FDFFFDFFFE7F
+INIT_0F = FFF8FFE0FF81FF05FC14F850E040C20A8205180B1017400F8016000F000E503A
+INIT_10 = C00040084000C0180008C0110001800180010011000300030043004700060044
+INIT_11 = 31ADE112804B00E300C30007002F0017000F003F003F000F000F801F800F001F
+INIT_12 = 8000E0404000B000500020003000000010009800C000140112020D0605A88160
+INIT_13 = D2E0FA18E40EFC0EEC00F507F6CDF60CFBD0FA80F840FC80FD00FD00FE00BE8E
+INIT_14 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0FF80FF00FE16FC00FC10F8B8
+INIT_15 = 025F024F01170167002F012F011301040117000E0002020A0307032301070021
+INIT_16 = FFFFFFFFFFFFF01F6007000307C18318C78C9FC26FFB4C7535BE1AFF0F7F02FF
+INIT_17 = 80000010800000000000080010000800340018001E00240056000A0045004200
+INIT_18 = FFFFFFC3FF80FF00FE0CFC5DF841F17E319F028C029840D132D4E8E8F8D87DF0
+INIT_19 = FFDEFFFDFFFEFFFDFFFEFFFCFFFE7FFCFFFE7FFC7FFABFFC7FF8BFFD3FFA7FFD
+INIT_1A = FFFFFFFFFFFFFFFF0FF807F003E0D1C6E08E30991C005A162A36F816FDD8FEBD
+INIT_1B = 03FE7FFFFFFE5FFEFFFF7FFFFFFEFFFE07FE5FFFCFFF27FD1FFE4FFF1FFDDFF9
+INIT_1C = 7FFF3FFF1FFF0FFF83F8C1F090E0C405F40EFD0CFFC0FFD8FE4CFF98FFA9FFFD
+INIT_1D = 00D101C2028512035C05420B3407280B341630091022085610A2115A02D20552
+INIT_1E = E0AAE08703A8022F0100679FB7BF5A7F387F9C7F08FF013F009F004F002F0017
+INIT_1F = 001900018011801105090001954182099559AA8135733AA31FD30A830787300F
+INIT_20 = 0017003F007F003F003E00280000000000000000000080000000800080018055
+INIT_21 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F0C18080000016
+INIT_22 = E400EC00E800EA00EA00C750C280CD50C6A0C55487A995558FF897541FF91FF5
+INIT_23 = 410FC1C709C343C1A3C84168A8244064A8700030000500040009800340062000
+INIT_24 = F807FA47FC63FD63FF12FFA2FF62FFF0FFF0FFE1FFD1FFE07F603F2199002D08
+INIT_25 = FFE6FFB6FF6AFF04FFC8FF50FE80FCA0FD03FE47F907FA8FFA8FF60FF21FFB1F
+INIT_26 = C59F218F1907091F0D03010F01010100030301910398011C079E013F083F487F
+INIT_27 = 000301310033013700A70123012F01A700A7010F005700CF00FF00FF00EF00FF
+INIT_28 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFF07FC01F800F15C736033D531F311B817F11
+INIT_29 = 00080004000C004024400440A0485648A54852C8A14CF7C1AF80F780BF87F387
+INIT_2A = C4FBA27BD1F4A0E2C074A8E0C010A824C044A820C048A048D008A008D00C804C
+INIT_2B = CFFE47FFCBFF47FFC1FFC1FFC1FFC1FFC1FF007F20BFC07F4212E309C7800FC0
+INIT_2C = 5C2BFD5B5E3DFE5DFE3FFFFFFFBFFF3FFFFFFFBEFF9CFFFCFFFEFFFEFFCCFFEC
+INIT_2D = FFFFFFFFFFFFFFFFFFFF3FFF0FFF07FF03FFD1FF18FFF07FCA3E1E3C2D181F11
+INIT_2E = 40004000C000000840084008000000000000000A4008400A400D400A400F400D
+INIT_2F = 06008401000084000000000000000000000000000002000000020001000A0005
+INIT_30 = FFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF0FFF07FFA3FF41FF20FFB47F
+INIT_31 = FFA9FFF1FFAA7FF2FFE87FF8FF20FC80FA04F01C903C80FC03FC0FFC7FFCFFFC
+INIT_32 = 05BD027A057C0B2A071C87160F140F88DF081E041F085C001E003844F4403888
+INIT_33 = 07FF00FF403FD00F1A07068101C000700034000A000700030001000080006004
+INIT_34 = 00030005000B0005802B0005802B0007000EA0161FF08000C000400F207F0807
+INIT_35 = 002C0002005A000D0056000E0057000B1817100BA007800B0207020B0E07480E
+INIT_36 = 854E0A8107C00FA057D02F6A16D02E685EF43E7A703E1E0B8088503C80015000
+INIT_37 = FCA0FF00FFE0FFF8FFF6FFF9FFFCFFFDFFFE7FF5BFFE1FF507FE02FFC0DFF03D
+INIT_38 = FDBCFF7CFFB6FF6BFEF0FEEAFF50FF20FF10FF88FE80FFCCFEA0FF417EA87FD0
+INIT_39 = FFFAFFFFFFFAFFFFFFFFFFFAFFB2FA90F701F8000001008B07173E2CFE14FC68
+INIT_3A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0FE00F800E0068187
+INIT_3B = FFFBFFFDFFFFFFFCBFFE1FFF0FFF07FF03FF05FF03FF01FF01DF02EF01E700B3
+INIT_3C = 0BFE07FB0BEC15B003C00483080F071F0D1F003F183F023F323E023C4E3C0C78
+INIT_3D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFF0FFE0FF82FF08FE11FC4BF895F12A
+INIT_3E = 8001800100008000800180008000000080004001000140010003200200032000
+INIT_3F = FFFFFFFFFFFEFFFCFFFCFFF8FFF0FFE1FFE1FFC2FF88FF10FE00FE00FC00F880
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram1":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 000F000F001F001F007F003F007F01FF03FF01FF03FF07FF0FFF1FFF3FFF7FFF
+INIT_01 = 00030007000300010003000100018000800080018000C000C000C000C000C000
+INIT_02 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF0FFF
+INIT_03 = DA01B500BE817F51FFAAFFD4FEACFFD8FEB0FFE0FFE0FF80FF80FD00FA00F400
+INIT_04 = FF80FF40FF20FF90FF88FF84FF80FF82FF92FFABFF95FFBFFF95FFBFFFBFFFBF
+INIT_05 = FFFFFFFFFFFFFFFFFFFF7FFF1FFF87FFE3FFF0FFF07FF03F7C0FCE07F383F8E1
+INIT_06 = FFFDFFFBFFF7FFCFFF9FFF3FFCFFF9FFF7FFCFFF3FFFFFFFFFFFFFFEFFFDFFF7
+INIT_07 = FFFFFFFFFFFF7FFFBFFFDFFFEFFF77FF3BFF7DFF17FF7AFF7D7F7F3FFF9FFFCF
+INIT_08 = FFFCFFFEFFFFFFFFFFFFFFFF001FFF80FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_09 = 015FE02A9E01F9FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF67FFF8FC
+INIT_0A = FFFFF803FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1FC3FFFFFFFFFFFF
+INIT_0B = FFFFFFFFFFF2FFAFFD7FFBFFEFFF3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FF0FF8FF8FFF
+INIT_0D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFFDFFFE7FFFDFFF37FC6CF
+INIT_0E = 00BF017F00FF02FF01FF01FF05FF07FF03FF03FF07FF05FF060001FF02FF01FF
+INIT_0F = FFFFFFFFFFFEFFF9FFE7FF9FFF7FFCF5FBFAEFF4DFE8FFF0FFE8FFF2FFF2FFD1
+INIT_10 = 400F400F4007C0078017401F000F801F800F002F001F003F001F007F007F00BF
+INIT_11 = 372EE215818E00C8000C00700018000800200010001000100010000000108000
+INIT_12 = 00000000A00070009000D000D000E000E000F8007000DC01EA03F100FB13FE6F
+INIT_13 = CCE7F3FBE7FFEFFFEFFFF6F9FF29F31CFAB0FE40F8C0FF80FD00FD00FE02BE8E
+INIT_14 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE6FFDFFFAFFF47
+INIT_15 = FE6FFEEFFFA7FFBFFFF7FFD3FFFBFFE8FFEBFEF8FEF5FEF4FEFCFEF8FCF8FFFE
+INIT_16 = FFFFFFFFFFFFFFFFFFFFFFFFFBDF74F7A87B703D30061021E97EF57FFDFFFDFF
+INIT_17 = 7FEFFFFF7FFFFFFFFFFFE7FFEFFFFFFFF3FFC7FFFDFFC3FFCFFFB1FFBFFFFAFF
+INIT_18 = FFFFFFFFFFFFFFFFFFF3FF9CFF7FFE81FF00FD00FD1C3D10ED0317370F27030F
+INIT_19 = 0021000200010002000100030001800380010003000540038007C0024005C002
+INIT_1A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFCFF817F50BE007F0FDC61FE606E502220080
+INIT_1B = 000100000001000100010001000000000000A000400110022003200340030005
+INIT_1C = FFFFFFFFFFFFFFFF7FFF1FFF3FFF1BF909F405F800A80171011300B20018000C
+INIT_1D = 0020000001000B00EE002000D000DC00C800C000C802C004D004C004C01CC01C
+INIT_1E = FF39FE02FCEDFED1FFC0E9800C00040006004F00040000000040002000100008
+INIT_1F = 801F801F000F800F000F8007000700070007001F801F802FC00F205F89BFE17F
+INIT_20 = 0000002000000001004000340000000000000000000000000000000000000031
+INIT_21 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7
+INIT_22 = FC00F400F400F400F400F000F400F800F800F000F800E000E801F800E001E000
+INIT_23 = 607F307F081F062F0137001F009B005F000F001D001200020003000080038000
+INIT_24 = 003F067F001F033F012F000F00CF001F005F004E006F003F809F411F7A7ECCFF
+INIT_25 = 0018006E00D800230087014F011F029F003F033F057F007F047F0CFF08FF08FF
+INIT_26 = 14E0C8E0E4F8F0E0F4FCFCF0FCFEFCFDFEFDFEFEFCFFFE7FFE7FFDFFF3FFA3FF
+INIT_27 = FF0AFE0EFF08FE00FF1CFE94FE98FE98FF90FE28FF38FF30FF20FF30FF30FF20
+INIT_28 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7BFD85FE12FA31FDB1FBD0F
+INIT_29 = FBFBFBFBFBF7FBF7FFFFFFF7FFFFF9FFFAF7F977FAF7FC79FC3FFC3FFC3AF831
+INIT_2A = F90CFD0FFE8BFF1BFF0BFF9BFFAFFF9BFFFBFFDBFFBBFFBBFFBFFFBFFFBFFFBF
+INIT_2B = 77FFF7FF77FFFBFF79FF7FFF7FFF7CFF7EFFFEFFFFBF3FDF3FC93FF07FFFFFFF
+INIT_2C = 5FF9FCF95EFFFFFFFEFFFF7FFFFFFF7FFFBFFFFFFFBFFFDFFFFDFFDDFFDDFFED
+INIT_2D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFFF7FF0BFF05FF03FF02FF81FE
+INIT_2E = 0007800700078007C007C007C00FC00FC00FC00D800F800D800A800D8008800A
+INIT_2F = 04010401040000000000000000000000000000000002000000020001000A0005
+INIT_30 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF9FFFDFFFEFFFF3FF
+INIT_31 = 0000000100038007000B8007007F013F04FF1BFFCFFF7FFFFFFFFFFFFFFFFFFF
+INIT_32 = FF00FF00FF20FF60FF707F707F68FF703FF83EF03EF47DFC3DFC3BFC33FCF7F4
+INIT_33 = FFFFFFFF3FFFCFFFF9FFFE7FFFBFFFEFFFF3FFF9FFFEFFFFFFFFFFFF7FFFDFFF
+INIT_34 = FFFCFFFAFFF4FFFAFFD4FFFAFFD4FFF8FFF13FF2E00F7FFFBFFFDFFFEFFFFBFF
+INIT_35 = FFC1FFF5FFA2FFF0FFA8FFF0FFA8FFF4FFE84FF49FF8BFF47DF8FBF4EDF8BFF1
+INIT_36 = FABEF57FF83FF05FA82FD015E82FD017A00BC00581811C58FF0AFFC0FFFEFFFF
+INIT_37 = FDFFFF7FFFDFFFF7FFFDFFFFFFFFFFFFFFFF7FFF7FFFCFFFF3FFFEFFFF9FFFD1
+INIT_38 = FFBCFFBDFFFFFF7FFF7FFF7FFF7FFFFFFFBFFFDFFFEFFFFBFFFDFFFF7FFFFFFF
+INIT_39 = FFFFFFFFFFFFFFFFFFFFFFFFFFF1FE4FF2FED7FCBFF9FFF3FFE7FFCFFFD9FFAF
+INIT_3A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FE07
+INIT_3B = FFFFFFFDFFFD7FFEFFFF3FFF1FFF0FFF07FF07FF02FF017F01BF02DF01EF00B7
+INIT_3C = 0BFE07FA0BEB15AF033F057F0AFF02FF04FF09FF09FF11FF11FF21FF0DFF4FFF
+INIT_3D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFF0FFE1FF8BFF15FE2A
+INIT_3E = 0000000000018001800180008000000000008001C001C0018003C003E000C001
+INIT_3F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFEFFF4FFE8FFF0FFE0FFC0FF80
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram2":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 000F001F001F003F003F007F00FF00FF01FF03FF07FF0FFF1FFF3FFF7FFFFFFF
+INIT_01 = 0007000300030003000100010001000100010000000000000000000000000000
+INIT_02 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF
+INIT_03 = E5FECAFFC17E80AE005400280150002001400000002000000080010002000400
+INIT_04 = FF00FF80FFC0FFE0FFF0FFF8FFFCFFFCFFECFFD4FFEAFFC0FFEAFFC0FFC0FFC0
+INIT_05 = FFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF1FFF0FFF0FFF0FFF03FFC1FFF07FF81F
+INIT_06 = FFFEFFFCFFF8FFF0FFE0FFC0FF00FE00F800F000C00000000000000000010007
+INIT_07 = FFFFFFFFFFFFFFFF7FFF3FFF1FFF0FFF07FF23FF71FF79FF7CFF7F7F7FBF7FDF
+INIT_08 = 0003000100000000000000000000FF80FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_09 = FEA01FD581FEF800FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF87FFFF03
+INIT_0A = 0000F803FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1FC0FFFFFFFFFFFF
+INIT_0B = FFFFFFFFFFF1FF9FFCFFF7FFDFFF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0FF00F000
+INIT_0D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFF1FFF03FF10FF0E3F
+INIT_0E = FFFFFFFFFEFFFFFFFDFFFFFFFFFFFFFFFBFFFBFFFFFFFFFFFDFFFC00FE00FF00
+INIT_0F = FFFFFFFFFFFFFFFEFFF8FFE0FF80FF00FC00F000E0008000000000020005001F
+INIT_10 = 3FF73FF73FFFBFFFFFFFBFFFFFEF7FEF7FFFFFFFFFDFFFDFFFFFFFFFFFBFFFFF
+INIT_11 = 30D01EE97F73FFB3FFB7FFC7FFCFFFCFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_12 = 3FFF3FFF3FFF2FFF0FFF0FFF0FFF1FFF1FFF17FF8FFFEBFEF5FDFAFDFDF7FF9F
+INIT_13 = 3F180C040800100010000001080E0823008F043F053F027F02FF02FF01FE4175
+INIT_14 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FFE0FFC0FF80
+INIT_15 = 0190018000C800C800C000E400E000F300F201F101F901F801F801FC03FC03FC
+INIT_16 = FFFFFFFFFFFFFFFFFFFFFFFFFC3FF80F700720030001C03C1181090004000400
+INIT_17 = 00100000000000000000100010001000180028002800140034007A007A007F00
+INIT_18 = FFFFFFFFFFFFFFFFFFFFFFE3FF80FF00FE00FE00FE1FFE181E100E2006200620
+INIT_19 = 0000000000000000000000000000000000008000800080008000800000000000
+INIT_1A = FFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFF0FF807F003E0FBE605C603C600C00144
+INIT_1B = 0000000000000000000000000001000100017001500100002000000240000002
+INIT_1C = FFFFFFFFFFFFFFFF7FFF7FFF0FFF07FE03F800F0027001210022000000440020
+INIT_1D = 00400080010006002600F000E400E800E800E801E002E004F008F000F000F010
+INIT_1E = FFC7FF01FEECFCE0FD801D000100010001003D00020000800000000000000000
+INIT_1F = 00070007000780078007000F000F000F000F000F001F801F001F807FD0FFC0FF
+INIT_20 = 000000000000004100020018000000000000000000000000000000000000000C
+INIT_21 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8
+INIT_22 = F800F800F800F800F800F800F800F000F000F000F800F800F000E001E001F000
+INIT_23 = 60FF103F003F021F010F00070007000300230013000100090000000400038003
+INIT_24 = 047F023F023F011F001F009F005F004F000F001F001E005E003E007EA6FFF3FF
+INIT_25 = 000000210047009F00BF003F017F007F02FF02FF00FF05FF05FF05FF01FF01FF
+INIT_26 = 0C700060046004780070007C0078007C027F027F027F02FF02FF04FF09FFE7FF
+INIT_27 = 009C00980098009C009000900098009800980010000000000000001000100010
+INIT_28 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF87FE03FC11FC30F9B0F430F
+INIT_29 = 0030003400300030043804380430043004380430043C003C007F007F007C047A
+INIT_2A = 0106000400860084008000000004000400440044004400440044004400440044
+INIT_2B = 300038003C0038003E003E003C003F003E003F801F401FA01FEF1FFF3FFF7FFF
+INIT_2C = A2060206A0020102010200020082008200020042004200020022002200220002
+INIT_2D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFF0FFF07FF03FF01FF01FF80FF
+INIT_2E = 3FF83FF8BFF8BFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8
+INIT_2F = FFFEFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFFFFFFFDFFFEFFF5FFFA
+INIT_30 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF0FFF
+INIT_31 = FFFFFFFFFFFEFFFDFFFFFFEFFFDFFF7FFDFFF7FFBFFFFFFFFFFFFFFFFFFFFFFF
+INIT_32 = 007F00BF00FF00DF00FF00EF00FF80F780F781FF81FFC3FF83FF87FF8FFF8FFF
+INIT_33 = FFFFFFFFFFFF3FFF07FF01FF007F001F000F000700010000000000000000C000
+INIT_34 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FF1FFFFFFFF7FFF3FFF1FFF07FF
+INIT_35 = FFF4FFFAFFFCFFFFFFFFFFFFFFFFFFFFFFFF3BFF7DFF7FFFFFFFFDFFF1FFC3FF
+INIT_36 = 00010000000000000000000000000000000000000180E038FFF6FFFFFFFFFFFF
+INIT_37 = FC00FF00FFC0FFF0FFFCFFFFFFFFFFFFFFFF7FFFBFFFEFFFFBFFFCFFFF1FFFE1
+INIT_38 = FF82FF83FF81FF01FF00FF00FF00FF80FF80FFC0FFE0FFF8FFFCFFFF7FFF7FFF
+INIT_39 = FFFFFFFFFFFFFFFFFFFFFFFFFFF0FE3FF1FFCFFF7FFEFFFCFFF8FFF0FFE1FFCF
+INIT_3A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8
+INIT_3B = 000300010001000080000000000000000000040002000100018002C001E000B0
+INIT_3C = 0BFE07F90BE7159F037F04FF09FF01FF03FF07FF07FF0FFF0FFF1FFF33FF33FF
+INIT_3D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFF4FFEAFFD5
+INIT_3E = 800080008000000000000001000180018001800080008000C002C002C002E001
+INIT_3F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFCFFF8FFF0FFE0FFC0FF80FF00
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram3":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_01 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_02 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_03 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFFFFFFF7FFEFFFDFFFBFF
+INIT_04 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_05 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFF0FFF07FF
+INIT_06 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFF8
+INIT_07 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FFF8FFF87FF83FF80FF807F803F
+INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFF007F00000000000000000000000000000000
+INIT_09 = FFFFFFFF7FFF07FF0000000000000000000000000000000000000000F800FFFF
+INIT_0A = FFFF07FC0000000000000000000000000000000000000000E03FFFFFFFFFFFFF
+INIT_0B = 00000000000F007F03FF0FFF3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFE1FF
+INIT_0E = 007F00FF01FF01FF03FF03FF03FF03FF07FF07FF03FF03FF03FF03FF01FF00FF
+INIT_0F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFF8FFE0
+INIT_10 = 800F800F800F000F000F000F001F001F001F001F003F003F003F003F007F007F
+INIT_11 = CFFF01FE00FC007C007800380030003000100000000000000000000000000000
+INIT_12 = C000C000C000C000E000E000E000E000E000E000F000F000F800FC03FE0FFFFF
+INIT_13 = 1FFF1FFF1FFF0FFF0FFF0FFE07F007C007000300020000000000000000010003
+INIT_14 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_15 = 01E001F001F001F001F801F801FC01FC01FC01FE01FE01FF01FF01FF01FF01FF
+INIT_16 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FC30E00060002000200
+INIT_17 = 00000000000000000000000000000000000010001000380038003C003C003C00
+INIT_18 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0FFE0FFE0FFC0FFC0FFC0
+INIT_19 = 0000000000000000000000000000000000000000000000000000000080008000
+INIT_1A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF07F903F901F801FC00F8
+INIT_1B = 0000000000000000000000000000000000000000A000E001C001C00180038003
+INIT_1C = FFFFFFFFFFFFFFFFFFFF3FFF1FFF0FFF07FF03FF01FF00FE00FC007C00380018
+INIT_1D = 00000000000000001800FC00F800F000F000F000F001F003E007E00FE00FE00F
+INIT_1E = FFFFFFFFFF13FF00FE00FE00FE00FE00FE000200010000000000000000000000
+INIT_1F = 800F800F800F000F000F000F000F000F000F000F000F001F803FC03FE07FFFFF
+INIT_20 = 000F001F003F003E003C00000000000000000000000000000000000000000003
+INIT_21 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_22 = F800F800F800F800F800F800F800F800F800F800F000F000F000F000F000E001
+INIT_23 = 9FFF0FFF07FF01FF00FF00FF007F003F001F000F000F0007000700038000C000
+INIT_24 = 03FF01FF01FF00FF00FF007F003F003F003F003F003F003F007F80FFC1FFFFFF
+INIT_25 = 0000001E003F007F007F00FF00FF01FF01FF01FF03FF03FF03FF03FF07FF07FF
+INIT_26 = 03E007F003F003F003F803F803FC03FE01FE01FF01FF01FF01FF03FF07FF1FFF
+INIT_27 = 007C007C007C00780078007800700070007000F000F000F000F000E000E000E0
+INIT_28 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFCFFE4FF80FF
+INIT_29 = 07FC07F807F807F803F003F003F003F003F003F803F803FE03FF03FF03FF03FC
+INIT_2A = 00FF00FE007C007C007C007C0078007800380038003800380038003800380038
+INIT_2B = F800F800F800FC00FC00FC00FE00FE00FF00FF00FF80FFC0FFF0FFFFFFFFFFFF
+INIT_2C = 01FC01FC01FC00FC00FC00FC007C007C007C003C003C003C001C001C001C001C
+INIT_2D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF
+INIT_2E = C007C007C007C007800780078007800780078007800780078007800780078007
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_31 = 00000000000100030007001F003F00FF03FF0FFF7FFFFFFFFFFFFFFFFFFFFFFF
+INIT_32 = FF80FFC0FFC0FFE0FFE0FFF0FFF07FF87FF87FF87FF83FF87FF87FF87FF87FF8
+INIT_33 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3FFF
+INIT_34 = 000000000000000000000000000000000000C00FFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_35 = 000300010001000000000000000000000000FC00FE00FE00FE00FE00FE00FC00
+INIT_36 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE7F00070001000000000000
+INIT_37 = 03FF00FF003F000F000300000000000000008000C000F000FC00FF00FFE0FFFE
+INIT_38 = 007F007E007E00FE00FF00FF00FF007F007F003F001F00070003000080008000
+INIT_39 = 000000000000000000000000000F01FF0FFF3FFFFFFFFFFFFFFFFFFFFFFEFFF0
+INIT_3A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_3B = FFFCFFFEFFFEFFFF7FFFFFFFFFFFFFFFFFFFFBFFFDFFFEFFFE7FFD3FFE1FFF4F
+INIT_3C = F401F807F41FEA7FFCFFFBFFF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_3D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_3E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFFFDFFFDFFFE
+INIT_3F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram4":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = C000C000C001C001C000C001C00080018002C000C00080060000800000080000
+INIT_01 = 087F047F263F021F010F038F0087008300430003000100600000001000000010
+INIT_02 = C800740028005000EA015003EA025008A8204061A887430F8C1F487F80FF03FF
+INIT_03 = FC7FFC3FFC3FFC3FFCFFF8FFF87FF8FFF0FFF1FFE37FE23EC0158C0A80010802
+INIT_04 = FC30FA8CFF42FA82FF41FE80FF40FEA0FD00EAA0D500F0A010000C000200C000
+INIT_05 = FF9FBD7F6BFFBFFFFFFDFFFFFFFDFFFFFFFDFFFFFFFCFFF2FFB8FDC09A018007
+INIT_06 = FFE1FFE9FFF9FFF1FFF9FFF9FFF9FFE1FFA3FFC7F71FB87E03FC1FFCFFF8FFF0
+INIT_07 = FFFFFFFFD5FF013F00470006FE00FF80FFF8FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FF001F00033F00FC20FF84FFF1
+INIT_09 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFE0FF00F002001B00C70E1F0ABF
+INIT_0A = FFE0FFC0FF80FF89FF8CFF8FFC060017004B02F31F3FF459E83FF45CEA2FF056
+INIT_0B = 75FF00BF005F02BF005D82804003A0D1FFC7F13F5AFF15FF0BFF157F03FF157F
+INIT_0C = DFE93FF07FEC7E83FF40FA80FF51FA00FF515E80175005000140C020F030FC04
+INIT_0D = FF7FFFFFFFEAFF50FFA0FD40FFA87F405FA87FC01FE00BF0833AE038F00AFE00
+INIT_0E = 801851808200400084001C00BA0074807A00FD40EA03FD08EA1CFD20FEC1FDC3
+INIT_0F = 008801410180000400080210004010807001C18280040C491E133F0F7F81FFC1
+INIT_10 = 801F000F801F000F001F000F000F0007000F000B00030009000E40084008C000
+INIT_11 = FFFEFFFCFFF8FFF1FFE1FFC2FF8DFF1A7E351E1E0C3F00F760FF3056102F1D16
+INIT_12 = FF17AF09FF98AF9C57AAAFEC154B2BCC8547AAC4014FC28E0047C080C040A000
+INIT_13 = F83EF8F1F833F838F8D9FC067C4E3C263E249E04DE034E21CE208811C011C041
+INIT_14 = 002302230221046002610060006108E20CE201E111E003F033F067F0EFF80FFC
+INIT_15 = 00FF05FF05FF00FF00FF027F00FF027F01BF017F01BF003F01BF025F02BF02BF
+INIT_16 = 43808080008010C011001080114018A0180038E038003CA07C707C00FE01FE04
+INIT_17 = 71D0EDF010400270054000500320012000B0006000F040500060403000304000
+INIT_18 = 3FFA7FFD3FFAFFFE3FFBBFFC7FFF3FFC3FF83FF83FF41FF81FE90FC317E31947
+INIT_19 = FFD8FFFEFFB8FF3CFFA4FF6DFF32FFE5FFAEFFFDFFFEFF8DFFEEFFDDFFDEFFFD
+INIT_1A = 3FF87FF1FFF1FFE8FFF0FFE0FFC0FF80FF4CFF9CFEBCFF7EFEFEE5FE93FFA7FF
+INIT_1B = FFEBFFE5FFF7FFFDBFF9BFFF4FFDA3FD4BFF89FFA5FF50FF22FF18FF0AFF06FF
+INIT_1C = 03D4054023E1277F0FFF07FF1BFF87FF81FFC3FFC7FFE0FFF17FF89FFC19FE0B
+INIT_1D = 000B0000000700000000400220014003800000070000000E000A000E00260052
+INIT_1E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE07FC01F800F038
+INIT_1F = 00D0005080100010805080100050801080108000802080008020802880088001
+INIT_20 = 0C903BA0446026CF66C8CAF042C082C080000000800000000000000000000005
+INIT_21 = 0FFD3FFE3FFADFFCBFF8FFF8FFF8FFF4FFF17FE8FFF8FFD17F81162138400F01
+INIT_22 = 600110020001000188018000C001C800C000C400E400EC00E800E800EC00EC00
+INIT_23 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF07FF01FF00FFE07F103F601F
+INIT_24 = FB1FF01FF01FF01FF21FF01FF11FF11FF91FF81FF88FF10FF80FF40FF847FC87
+INIT_25 = FF80FF00FE01FC1CF838F064E150C37D85FE07F50FFF5FF57FFEBFF5FFFA7FD0
+INIT_26 = 01EF01FF01EF01EF01AF01CF000F000F010F060F0E0F820F000F060F0C0FD69F
+INIT_27 = F911849103110181010101010100010001100150019001910191011301120103
+INIT_28 = FBC8FF10F300F600E400F800DA60F8408020002006003E00FF10FF10FF8AFFC0
+INIT_29 = D008000C40DA001C401E003801D6003E005C02F603C601F407E004C2016204A6
+INIT_2A = FFFFFFFFFFFFFFFFFFFFC0FF803F001F2F8F6747CCC3885038B08A609EF08861
+INIT_2B = FFC67FEEFFF07FE4BFF47FFC7FF07FFC3FF85FFC5FF84FFD5FFA6FFFC7FA47FF
+INIT_2C = BE831F023F83BF4B1D03BE57ED3F4E966D37361F650B3612580BA8035A29BC19
+INIT_2D = 400F400F400F400F400F400F400E4006000D400B00010003200130011004043C
+INIT_2E = 000B0005000F0005000F000F000F000B0009000D0009400A00024008C0018008
+INIT_2F = 5A3FBC3F7E1EFF0C5FC0FF00FEA27F40FE917D39BE234C4638221C7A03848E03
+INIT_30 = FFFCFFFC1FFC01FC00FC307C187C107C107C307CB07C107C087C107E20FE01FF
+INIT_31 = 718CA38847880F101E003800004A015405E8617406F88DF427E8AFF4FFE8FFF0
+INIT_32 = F8017E002F851FE02FC117FCAFF215FDAFFE55FEAFFF3FFF0FFD07FE07FD00FE
+INIT_33 = 04000100006800000000800050001B30003F000080000000A0004000A00AFF58
+INIT_34 = 0806200D0016000A8010402030A01000050C0BFA05F52AFE85FEBFF42FD7000F
+INIT_35 = 8000500080004000800038004B00BE507F86FF41FA86FF0EF80F831A00630042
+INIT_36 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF003F00010000EC00FF10
+INIT_37 = FEA8FFF0FFAAFBD0F9EAFFF4FF3AF52DFEB6F509FE85F5023E00FD00E680F500
+INIT_38 = F8E0F040E2A8C7C08FA81FC00F905F403E807F00FA82FF02FA85FD4EFEAEFF7C
+INIT_39 = 06FA1BF447F88FF43FE8FFF2FFE8FFF05FA8FFF05FE1FF35FA7ED3FF87FA3FFF
+INIT_3A = 057B00BF007F80AF807F20AF105F003FC21FE22FF19FF82FFC37FE0BFF87FFC1
+INIT_3B = 5C789E313E31BE213C213C057F037E037F87FF03FF83FFE3FFC3FFEBFFF7FFFB
+INIT_3C = E255C022C44788230046102A20500143451F947F51FFC7FF8BFF17FF0BFF17FF
+INIT_3D = 0000100088008C00C000E200F000F100F8C0FC60FE30FF18FF8CFFC6FFE3FFF1
+INIT_3E = F080E300E000C0008C0088001800100010000000000020000000400040004000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram5":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = C000C000C000C000C001C001C000C000C0018003800180018007000300070007
+INIT_01 = 87FF43FF21FF01FF00FF007F017F00FF003F007F001F005F000F000F0007001F
+INIT_02 = E800B4006800D000EA005000EA05500FA80F401FA8FF40FF87FF57FFDFFF7FFF
+INIT_03 = FFBFFFBFFFBFFFBFFF7FFF7FFF7FFFFFFEFFFFFFFD7FFE3EF815F40AF001E802
+INIT_04 = FC10FA84FF42FA83FF41FE80FF40FEA0FD00EAA0D500B0A0C000F800F800FF00
+INIT_05 = FFDFBE7F73FF3FFFFFFDFFFFFFFDFFFFFFFDFFFFFFFDFFF5FF97FCBF89FF7FFF
+INIT_06 = 7FFFFFEFFFF7FFF7FFFFFFFFFFF7FFFFFFBFFEBFF2FF97FF7FFFFFFFFFFFFFFE
+INIT_07 = FFFFFFFF19FFFFBFFF97FFFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFC1FFF83FFF0
+INIT_09 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFE3FF07F01F0ABF
+INIT_0A = FFFFFFFFFFFDFFF3FFF1FFF0FFF8FFE8FF8CFCF41FFCFFFAFFFEFFFDFFFFFFFE
+INIT_0B = 7FFFFFFFFFFFFFFFFFFF7FFFBFFC5F1F023F20FF37FFBFFFFFFFFFFFFFFFFFFF
+INIT_0C = A0A88020801A017E00BF057F00AF05FF80AF217FC8AFF2FFFCBFFF7FFFD7FFFA
+INIT_0D = 00BF002F001900AF005F02BF005780BF4057803FF81FF60FFD45FFAFFFF3FFFF
+INIT_0E = FFA7FEFFFDFFFBFFF3FFF3FFE5FFCB7F05FF02BF15FF02F115E302DF013F023F
+INIT_0F = 007F003E007D02FF03FF01FF0BBF07FF5EFF9EFF3F7F7FFDFFDAFFE8FFF8FFFF
+INIT_10 = 8000000000000000000000000000000800080008000400000006C005C006400F
+INIT_11 = FFFFFFFFFFFFFFFEFFFDFFFBFFF7FFEFFFDFFFDFFFBF7F77DFFFEE57F62FFC17
+INIT_12 = FF17AF2FFFDFAFDF578FAFEF155E2BCE855FAAC7014CC2820045008040402000
+INIT_13 = FF41FF80FF42FF42FF63FFBEFFB2FFF8FFFA7FD83FDC7FDFDFDEBFFEDFFEFF8E
+INIT_14 = FDFEFDFEFFFCFDFDF9FCFFFDFBFCFFFDF3FDF7FFFFFEFFFFFFFFDFFF9FFFFFFF
+INIT_15 = F9FFFDFFFDFFFCFFFDFFFEFFFEFFFC7FFCFFFC7FFC3FFDFFFD3FFE9FFEFFFEDF
+INIT_16 = BCFFFD7F7E7FFF7F7FBFFEFF7E7FFF3FFF9FFF9FFF7FFF7FFFDFFFDFFFEBFFFB
+INIT_17 = 750F1F0FEBBFFFAFF89FFE8FFCDFFFDFFFDFFF0FFFCFBF8FFFFFBFDFFFFFBFFF
+INIT_18 = 80058002C005C000000500038002C003C005C003800BE007C017F02FF85FEBBF
+INIT_19 = 006500C90043004300C3008A009D005A00510002005100520031002200010022
+INIT_1A = 0002000A000E001F001F002F001F001F00FF007F007F02FF05FF13FF5FFFDFFF
+INIT_1B = 000000180008800600066002A002D0027400B0007A003C001E000E0006002600
+INIT_1C = C019C000D000C000F000E800E000F800F000FC00FA00FC00FF00FFE0FFBFFFF0
+INIT_1D = 0000000700030002000140020000400080030002000400000008001000080014
+INIT_1E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC7
+INIT_1F = 806F800F804F000F004F804F002F000F802F800F802F802F801F800780178007
+INIT_20 = F320D7C0A380C3060B189B00E320418001008000000000000000000000000004
+INIT_21 = D003C00280012001800780018003000F000E80168016001F403F99DFD13EF0FE
+INIT_22 = A003C001D000F000F000E800F000F800F800F000F000F000F400F400F400F400
+INIT_23 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1FFF0BFF62FF
+INIT_24 = 00FF0BFF0BFF0BFF08FF08FF09FF09FF01FF01FF017F007F087F0CFF04BF003F
+INIT_25 = FFFFFFFFFFFAFFE8FFD0FF97FEA0FE80FA00E800C000A000C000C00000008000
+INIT_26 = FF20FF30FF30FF30FF50FF70FEB0FF70FEF0F8F0F7F08DF0FFF03DF002F0DD70
+INIT_27 = 820F798FFC0FFE9FFE9FFE9FFE9FFE9FFE9FFE9FFE9FFE9FFE9FFE1DFE1DFE0C
+INIT_28 = FC2FFCEFF04FF9FFE2DFE5FFC99F979F3FDFFFFFFFFFFFCFFFEFFFE7FFF3FFFC
+INIT_29 = FFFBFFBBFFBFFF7DFFFDFF7FFF77FEF7FEF5FFF9FDE9FDE9FDFBFBD9FFDFFFD3
+INIT_2A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCF7FB8FF701FF02FC01F1A1FEA07F016
+INIT_2B = FFFF7FE77FF77FFB3FF7BFFBFFFBBFFFDFFFDFFFFFFFCFFFFFFFDFFF67FFFFFF
+INIT_2C = 817D807E80FD00BFC2B3C1EFE2C7714F62E731EF7AE331FF5BF3AFF759F9BDF9
+INIT_2D = 80088008800880088008800880098009C002C00C8007C000A000E002F807F413
+INIT_2E = 000B0005000F0005000F000F000B000F0009000B000D000C4005400E4006800F
+INIT_2F = F9FFFDFFFEFFFF7FFFBFFF3FFE9CFF5B7E86BD1E5E3C3C7818B805FC0C860202
+INIT_30 = FFFFFFFFFFFFFFFFFFFFEFFFF7FFF7FFF7FFD7FF27FFE7FFF7FFEFFFDFFF7FFF
+INIT_31 = 6FF01FF83FF0FFE8FFF0FFD0FF80FE00F900808005008A003000D00040000000
+INIT_32 = 17FF85FFD17FE05FD02FE80B500DEA025001AA0150004000D000F000FA00FE00
+INIT_33 = FDFFFF7FFFE7FFFFFFFF7FFFCFFFE70FFFC0FFFFFFFFFFFFFFFFFFFFFFF8FF37
+INIT_34 = 97F8DFF3FFE9FFF1FFE3FFC7DF9FF7FFFCF0FFFAFFF5FFFEFFFF7FF9E018FFF0
+INIT_35 = FFFFFFFFFFFFFFFFFFFFFFFFF3FF3F9F7FFBFFFEFFF9FFF1FFF000E1FFE0FF91
+INIT_36 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF03FFFF0F
+INIT_37 = BFFFDFFFEFFFF3FFFDFFFEFFFFBFFFCFFFFBFFF9FFFCFFFE7FFFDFFFEFFFF3FF
+INIT_38 = FF3FFE7FFEFFFFFFFFFFFFFFCFFF9FFFFFFF7FFF7FFFFFFAFFF5FFEEFFFFFFDD
+INIT_39 = F8FFE3FF87FF0FFF3FFFFFFFFFFFFFFF5FFFFFFF5FFEFFC6FC7FE3FF07FF3FFF
+INIT_3A = 057900BE007F00AF407FE0AFF05FF03FF81FFD2FFE9FFF8FFFC7FFFBFFF9FFFF
+INIT_3B = 5FFF1DFFBDFEBDFD3DFF3DF97EFB7EFF7F7BFF7BFFBBFFDBFFDBFFE3FFF3FFFF
+INIT_3C = FC55FC22F847F023F047E02CC060C183861F187F61FF87FF0BFF17FF0BFF17FF
+INIT_3D = F000E000F800F000F800FE00FF00FE80FF00FF80FFC0FFE0FFF0FFF8FFFCFFFE
+INIT_3E = FE00FC00FE00F800F000F800E000F000E000C000E000C0008000C00080008000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram6":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 000000000000000000000000000100010001000100030003000300070007000F
+INIT_01 = BFFF5FFF2FFF07FF03FF01FF00FF007F007F003F003F005F001F000F000F0017
+INIT_02 = 080034006800D000EA005001EA035007A81F403FA87F41FF83FF4FFFBFFFFFFF
+INIT_03 = FFC0FFC0FFC0FFC0FF80FF80FF80FF00FF00FE00FE80FDC1FFEAFBF5FFFEF7FD
+INIT_04 = FC0FFA83FF41FA82FF41FE80FF40FEA0FD00EAA0D50030A0E000F000FC00FE00
+INIT_05 = 001F407F83FF3FFFFFFDFFFFFFFDFFFFFFFDFFFFFFFCFFF3FF8FFC7F87FFFFFF
+INIT_06 = 7FEFFFE7FFF7FFF7FFFFFFFFFFF7FFEFFF9FFE7FF1FF8FFFFFFFFFFFFFFFFFFF
+INIT_07 = FFFFFFFFE1FFFE3FFFE7FFF8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF03FF007F000F
+INIT_09 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFF8FFE0F540
+INIT_0A = FFFFFFFFFFF3FFF0FFF0FFF0FFF0FFF0FFF0FF08E00000040000000200000001
+INIT_0B = 8000000000000000000000000000001F03FF3FFF8FFF7FFFFFFFFFFFFFFFFFFF
+INIT_0C = 1F977FEFFFF9FFFEFFFFFFFFFFFFFFFFFFFFBFFFEFFFFBFFFEFFFFBFFFE7FFFC
+INIT_0D = FF80FFE0FFF8FFFFFFFFFFFFFFFFFFFFFFFFDFFFEFFFFBFFFE7FFFCFFFFCFFFF
+INIT_0E = 003F00FF01FF03FF07FF1FFF3FFF7FFF7FFFFFFFFFFEFFFBFFF7FFEFFFDFFFBF
+INIT_0F = FF7FFFFFFEFEFFF8FDF0FBE0FFC0FF00AF007F00FF81FF80FFE1FFF7FFFDFFFE
+INIT_10 = FFFF7FFF7FFF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF3BFF73FF73FF7
+INIT_11 = FFFFFFFFFFFFFFFFFFFEFFFCFFF8FFF0FFE0FFE0FFC0FF883F001FA80FD003E8
+INIT_12 = 00E050A000205060A8505030EAA0D4207AB15531FEB9BD7B7FBE7F7F7FBF1FFF
+INIT_13 = FF80FF00FF83FF82FF80FFC5FFC1FFC3FFC3FFE17FE1BFE17FE05FE01FE03FF0
+INIT_14 = 01FC01FC01FE03FE07FE07FE03FE03FE0FFE07FE07FF1FFF0FFF1FFF3FFF7FFF
+INIT_15 = 0400000000000100010002000200028002800200024002400200012001200100
+INIT_16 = 3D003F80FE80FE807EC07FC0FF40FF00FF20FF20FFA0FFA0FF80FFF0FFFFFFFF
+INIT_17 = 7220042004200220020000000100000000800090005000500030003000100010
+INIT_18 = 4000400040004001800180008001800380018007C003C00FE007C00FF01FF37F
+INIT_19 = 0000008800880088000800000010005000500050000000000020002000200000
+INIT_1A = 80030007000F0007001F001F001F007F003F007F00FF03FF07FF07FF2FFFBFFF
+INIT_1B = 0014000C00040000400020000000080080004400000002000200020002002000
+INIT_1C = F011F012F000E000E000F000F800F000FC00F800FE00FF00FE80FF40FFD0FFFF
+INIT_1D = 0004000200030002000260012003400380020002000000040000000000000018
+INIT_1E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_1F = 007F003F007F807F803F803F001F001F003F003F001F001F000F000F001F001F
+INIT_20 = FFC0E000C0008004880014004000008082000000000000000000000000000000
+INIT_21 = E000C001E00380014001800700030003000F0007001F002EC05EC0BEE0FFFFFF
+INIT_22 = C000C000E000F000E000F000F800F800F000F800F800F800F800F800F800F800
+INIT_23 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF07FF61FF
+INIT_24 = 09FF09FF09FF09FF09FF09FF08FF08FF08FF08FF08FF08FF00FF047F047F047F
+INIT_25 = FFFFFFFFFFFCFFF0FFE0FFD8FF40FD00F800F800F000E000C000000080000000
+INIT_26 = 001000000000000000200020016001E000E003E001E07BE0FFE0C3E001E03CE0
+INIT_27 = 010F008F008F000F000F000F000F000F000F000F000F000E000F008E008C009E
+INIT_28 = 0478046008F008C011C013E027E04FE07FE0FFE0FFC0FFF0FFE0FFF0FFF8FFFE
+INIT_29 = 004000000000008200820002000A010A0008000C021C001C001E043E04380438
+INIT_2A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0FFC03F803F001F000FFA0F060F020F
+INIT_2B = 0010801080000008400C40044004000020000000000030003000200038003800
+INIT_2C = 80FE80FC007A407400742038003890389010C010881CC80CA0085408A4064006
+INIT_2D = FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF8FFF0BFFBBFFCFFFEDFFEEFFDFFF7
+INIT_2E = FFF4FFFAFFF0FFFAFFF0FFF0FFF4FFF4FFF2FFF2FFF0FFF1FFF9FFF0FFF8BFF0
+INIT_2F = 07FF03FF01FF00FF007F00FF017F00BC017882E0C1C0E380F738F281F978FBFC
+INIT_30 = FFFFFFFFFFFFFFFFFFFF1FFF0FFF0FFF0FFF0FFFCFFFFFFFFFFFEFFFDFFF3FFF
+INIT_31 = 1FFF7FF7FFF7FFFFFFEFFFFFFFDFFFBFFE7FFEFFF9FF73FFC7FF1FFF7FFFFFFF
+INIT_32 = F000FC00FF00FFC0FFE0FFF8FFFCFFFEFFFFFFFFFFFF7FFF1FFF07FF03FF00FF
+INIT_33 = 03FF00FF001F000000000000C000FF00FFFFFFFFFFFFFFFFFFFFFFFFFFF9FF0F
+INIT_34 = C7FEFFFEFFFDFFFBFFF77FEF1FBF0FFF03FF0005000A000100000001E01FFFFF
+INIT_35 = FFFFFFFFFFFFFFFFFFFFFFFF03FFC01F800300000000000000000000FFE0FFE8
+INIT_36 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FF
+INIT_37 = 3FFF1FFF0FFF03FF01FF00FF003F000F00030006000300010000C000E000F000
+INIT_38 = FFBFFF7FFCFFFBFFF7FFEFFFEFFFDFFFBFFFFFFF7FFEFFF9FFF2FFE1FFE1FFC3
+INIT_39 = FF00FC00F800F000C000000000000000A0000000A0000007007F03FF07FF3FFF
+INIT_3A = 057800BE007F00AF807FC0AFE05FF83FFC1FFE2FFF1FFFCFFFE7FFF3FFFDFFFE
+INIT_3B = 23FF63FE43FE43FFC3FDC3FD81FF81FB80FB00FB007B003B003B001B000B0003
+INIT_3C = FFAAFFDDFFB8FFDCFFB8FFD0FF80FE03F81FE07F81FF07FF0BFF17FF0BFF17FF
+INIT_3D = E000F000F000F800FC00FC00FE00FF00FF80FFC0FFE0FFF0FFF8FFFCFFFEFFFF
+INIT_3E = FF00FE00FC00FC00F800F000F000E000E000E000C000C000C000800080008000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprimg/ram7":
+DATA_WIDTH_A:1
+DATA_WIDTH_B:1
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_01 = 7FFFBFFFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFFFFFFFFFFFFFFFEF
+INIT_02 = F7FFCBFF97FF2FFF15FFAFFF15FFAFFF57FFBFFF57FFBFFF7FFFBFFF7FFFFFFF
+INIT_03 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_04 = 03FF057F00BF057D00BE017F00BF015F02FF155F2AFFCF5FFFFFFFFFFFFFFFFF
+INIT_05 = FFE0FF80FC00C0000002000000020000000200000003000F007F03FF7FFFFFFF
+INIT_06 = 801F001F000F000F00070007000F001F007F01FF0FFF7FFFFFFFFFFFFFFFFFFF
+INIT_07 = 00000000FE00FFC0FFF8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_08 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_09 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_0B = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0FC00C000000000000000000000000000
+INIT_0C = C07F801F0007000100000000000000000000C000F000FC00FF00FFC0FFF8FFFF
+INIT_0D = 007F001F0007000000000000000000008000E000F000FC00FF80FFF0FFFFFFFF
+INIT_0E = FFC0FF00FE00FC00F800E000C00080008000000000010007000F001F003F007F
+INIT_0F = 00FF00FF01FF01FF03FF07FF07FF0FFF1FFF3FFF7FFEFFFEFFFCFFF8FFFEFFFF
+INIT_10 = 00008000800080000000000000000000000000000008000C000C000E800F800F
+INIT_11 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_12 = 000F005F007F003F003F001F001F001F000E000E00060004800080008000C000
+INIT_13 = FFFFFFFFFFFCFFFCFFFCFFF8FFFCFFFCFFFCFFFEFFFE7FFE3FFF3FFF3FFF1FFF
+INIT_14 = 03FF03FF03FF03FF03FF03FF07FF07FF07FF0FFF0FFF0FFF1FFF3FFF7FFFFFFF
+INIT_15 = 02000200020002000200010001000100010001800180018001C001C001C001E0
+INIT_16 = 7E007E007F007F00FF00FF00FF80FFC0FFC0FFC0FFC0FFC0FFE0FFE0FFF0FFFF
+INIT_17 = 8FC003C003C001C001E001E000E000E000600060002000200000000000000000
+INIT_18 = 8000800080008000C000C001C001C001C003C003C007C007C00FE01FE03FFCFF
+INIT_19 = 00F8007000700070007000700060002000200020002000200000000000000000
+INIT_1A = 000700070007000F000F001F003F003F007F00FF01FF01FF03FF0FFF1FFF7FFF
+INIT_1B = 00080000000000008000C000F000F000F800F800FC00FC00FC00FC00FC00DC00
+INIT_1C = E00EE00CE000F000F000F000F000F800F800FC00FC00FE00FF00FF80FFE0FFFF
+INIT_1D = 000000000000000100018001C001800100010001000300030007000F001F0020
+INIT_1E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_1F = 003F007F003F003F003F003F803F803F801F801F801F801F801F801F800F800F
+INIT_20 = FFFFFFFFFFFFFFF8F7F0E3E083C0830000000000000000000000000000000003
+INIT_21 = E001E001C001C00380030003000700070007000F000F801F803FE07FFFFFFFFF
+INIT_22 = C000E000E000E000F000F000F000F000F800F800F800F800F800F800F800F800
+INIT_23 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FFF
+INIT_24 = 07FF07FF07FF07FF07FF07FF07FF07FF07FF07FF07FF07FF07FF03FF03FF03FF
+INIT_25 = FFFFFFFFFFFFFFFFFFFFFFE0FF80FE00FC00F000E000C0008000800000000000
+INIT_26 = 00E000E000E000E000E000E000E000E001E001E003E007E0FFE0FFE0FFE003E0
+INIT_27 = 00FF007F007F007F007F007F007F007F007F007F007F007F007E007E007E007C
+INIT_28 = 03F003F007E007E00FE00FC01FC03FC0FFC0FFC0FFE0FFE0FFF0FFF8FFFCFFFF
+INIT_29 = 003C007C007C007C007C00FC00FC00FC01FE01FE01FE03FE03FC03FC03FC03FC
+INIT_2A = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05FF01FF01FF
+INIT_2B = 000C000C000C8004800080008000C000C000E000E000E000E000F000F000F000
+INIT_2C = 7FFF7FFF7FFC3FF83FF81FF01FF00FF00FF80FF807F807F807FC03FC03FC03FC
+INIT_2D = 8007800780078007800780078007800780078007C000C001C001E001F003F80F
+INIT_2E = 0000000000000000000000000000000000040004000600060006000700074007
+INIT_2F = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFF3FFF1FFF0FC70F0006000400
+INIT_30 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1FFF0FFF0FFF1FFF3FFFFFFF
+INIT_31 = FFF8FFF8FFF8FFF0FFF0FFE0FFE0FFC0FF80FF00FE00FC00F800E00080000000
+INIT_32 = 0FFF03FF00FF003F001F0007000300010000000000008000E000F800FC00FF00
+INIT_33 = FFFFFFFFFFFFFFFFFFFFFFFF3FFF00FF000000000000000000000000000700FF
+INIT_34 = 3801000100030007000F801FE07FFFFFFFFFFFFFFFFFFFFFFFFFFFFE1FE00000
+INIT_35 = 000000000000000000000000FC00FFE0FFFCFFFFFFFFFFFFFFFFFFFF001F0007
+INIT_36 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_37 = C000E000F000FC00FE00FF00FFC0FFF0FFFCFFFFFFFFFFFFFFFF3FFF1FFF0FFF
+INIT_38 = FFC0FF80FF00FC00F800F000F000E000C000800080010007000F001F001F003F
+INIT_39 = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FF80FC00F800C000
+INIT_3A = FA87FF41FF80FF50FF80FF50FFA0FFC0FFE0FFD0FFE0FFF0FFF8FFFCFFFEFFFF
+INIT_3B = FFFFFFFFFFFFFFFEFFFEFFFEFFFCFFFCFFFCFFFCFFFCFFFCFFFCFFFCFFFCFFFC
+INIT_3C = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFE0FF80FE00F800F400E800F400E800
+INIT_3D = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_3E = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprpal/ram":
+DATA_WIDTH_A:9
+DATA_WIDTH_B:18
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000004200421
+INIT_13 = 0000000000000000000000000000000000000000000000000000002004200421
+INIT_14 = 0000000000000000000000000000000000000000000000210020042004210421
+INIT_15 = 0000000000000000000000000000000000000000000000210021042104210421
+INIT_16 = 0000000000000000000000000000000000000000002100210021042104210421
+INIT_17 = 0000000000000000000000000000000000000000002100210421042104210842
+INIT_18 = 0000000000000000000000000000000000000021002100210421044108410842
+INIT_19 = 0000000000000000000000000000000000000021002104210421044108410842
+INIT_1A = 0000000000000000000000000000040104210421042104420441084108420C63
+INIT_1B = 0000000000000000000000000000040104210421042104420441084108420C63
+INIT_1C = 000000000000000000000000000104210421042104210442044208620C620C63
+INIT_1D = 000000000000000000000001040104210421042104420442044208620C620C63
+INIT_1E = 000000000000000000000001042104210421042104420442086208620C631084
+INIT_1F = 00000000000000000000000104210421042104420442046308620C6210831084
+INIT_20 = 00000000000000000001040104210421042104420442086308630C83108314A5
+INIT_21 = 00000000000000000001040104210421084208420842086308830C8314A414A5
+INIT_22 = 0000000000000000000104210421082208420842086308840C8310A314A418C6
+INIT_23 = 0000000000000000000104210421082208420842086308840C8310A314A418C6
+INIT_24 = 0000000000000000000104210422084208420863086308840CA410A418C51CE7
+INIT_25 = 040000000000000104210422082208420842086308840CA50CA414C418C51CE7
+INIT_26 = 040000000000000104210422082208420842086308840CA510A414C41CE52108
+INIT_27 = 040000000000000104210422084208420C630C630C840CA510C514E51CE62108
+INIT_28 = 04000000000000010421042208420C430C630C630C840CC610C518E521062529
+INIT_29 = 04000000000000010421042208420C430C630C840CA50CC610E5190521072529
+INIT_2A = 04000000000004210422082208430C630C630C840CA510C614E619062527294A
+INIT_2B = 04000000000004210422082208430C631084108410A510E715061D2629482D6B
+INIT_2C = 0400000000000421042208230C430C63108410A510C610E715071D2729482D6B
+INIT_2D = 0400000000000421042208430C431064108410A510C61508192721472D69318C
+INIT_2E = 0400000000000421042208430C631064108410A510E71508192721672D6935AD
+INIT_2F = 0400000000000421042208430C64108414A514C614E715291D482568318A39CE
+INIT_30 = 0400000000000421042208430C64108414A514C614E715291D48258835AA39CE
+INIT_31 = 080000000421042208430C441064148514A514C61508194A1D6929A939CB3DEF
+INIT_32 = 080000000421042208430C441064148518C618E71908194A218929A939CC4210
+INIT_33 = 080000000421042208430C44108514A518C618E71929196B218A2DCA3DEC4631
+INIT_34 = 080000000421042208430C64108518A618C618E719291D8C25AA31EA420D4A52
+INIT_35 = 080000000421042208430C65148518A61CE71D081D4A1D8C25CB31EB462E4E73
+INIT_36 = 080000000421084208441065148618C61CE71D081D4A21AD29CC360C4A4E5294
+INIT_37 = 08000000042108420844106514861CC71CE71D291D6B21CE29EC3A2C4A4F56B5
+INIT_38 = 08000000042108420844106514A61CC721082129216B21CE2E0D3A4D4E705AD6
+INIT_39 = 0C000000042108430C64106618A61CC72108214A218C25EF2E0D3E6D52905EF7
+INIT_3A = 0C000000042108430C64108618A720E82108214A218C2610322E428E56B16318
+INIT_3B = 0C000000042108430C65148618A720E82529254A25AD2A10324F42AF5AD26739
+INIT_3C = 0C000000042108430C6514871CC720E82529256B25CE2A31366F46CF5EF36B5A
+INIT_3D = 0C000000042108430C6514871CC82509294A296B29CE2E5236904AD063146F7B
+INIT_3E = 0C000000042108430C6514871CC82509294A298C29EF2E733AB14EF16735739C
+INIT_3F = 1000000008420C64108614A820E9292A2D6B2DAD2E1032943ED253326F767BDE
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "sprval/ram":
+DATA_WIDTH_A:9
+DATA_WIDTH_B:36
+WRITE_MODE_A:WRITE_FIRST
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 068C6018067C4018046C601804B7400802A76008029740080087600800774008
+INIT_01 = 0EA760280E9740280C8760280C7740280A6760280ABC401808AC6018089C4018
+INIT_02 = 16B7603816A740381497603814874038127760381267403810C7602810B74028
+INIT_03 = 1E7060581EB940481CA960481C9940481A8960481A7940481869604818C74038
+INIT_04 = 26A1606826914068248160682471406822B0605822A040582090605820804058
+INIT_05 = 2E9260882E8240882C7260882CA340782A9360782A8340782873607828B14068
+INIT_06 = 368E60A8367E40A8346E60A8349E4098328E6098327E4098306E609830A24088
+INIT_07 = 3E7760C83E6740C83CAD60B83C9D40B83A8D60B83A7D40B8386D60B8389E40A8
+INIT_08 = 46AB60D8469B40D8448B60D8447B40D8426B60D842A740C8409760C8408740C8
+INIT_09 = 4E9B60F84E8B40F84C7B60F84C6B40F84A9F60E84A8F40E8487F60E8486F40E8
+INIT_0A = 567F6118566F411854AB6108549B4108528B6108527B4108506B610850AB40F8
+INIT_0B = 5EAC61285E9C41285C8C61285C7C41285A6C61285AAF4118589F6118588F4118
+INIT_0C = 666A614866BC413864AC6138649C4138628C6138627C4138606C613860BC4128
+INIT_0D = 6E7A61586E6A41586CCA61486CBA41486AAA61486A9A4148688A6148687A4148
+INIT_0E = 76906168768041687470616874CA415872BA615872AA4158709A6158708A4158
+INIT_0F = 019001907EAC41787C9C61787C8C41787A7C61787AC0416878B0616878A04168
+INIT_10 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_11 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_12 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_13 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_14 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_15 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_16 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_17 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_18 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_19 = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1A = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1B = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1C = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1D = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1E = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_1F = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_20 = 060602500606071007070388070701C40808025A08080138090901220D0D012D
+INIT_21 = 0404096B050501CE050501B9050507060505071B05050265050504B50606037D
+INIT_22 = 030303930303096003030976040404C004040E0C040405E3040404AB040400A1
+INIT_23 = 030312D70303095603030E01030302F1030305D8030312C10303041F03030E16
+INIT_24 = 02020414020212E202020BC6020212B703031C4D030312CC03031C43030306FB
+INIT_25 = 020212AC02020E2102020BBB020205EE02022A4402021C380202083302021C22
+INIT_26 = 02022A6F020202E6020212EC02022583020204290202054C02022A3902020726
+INIT_27 = 020238860202054102020BB10202037202021C180202083E02021C58020202FC
+INIT_28 = 0505098C050513380505134D060613430808101008080FF00D0D0FFB0E0E1006
+INIT_29 = 040409760404135804040664040409810404132D0404101B0404065905050996
+INIT_2A = 03030FDB03030CDE04040FD004040CB304040A1704040A22040412EC0404130D
+INIT_2B = 0303064E0303122B0303130203030A0D0303132203030CA8030309A1030312F7
+INIT_2C = 0303050B0303067A03030CBE0303123503030FE5030312E203030CD303031026
+INIT_2D = 02021318020209600202124002020CC902020FC50202066F020209AC02020A2D
+INIT_2E = 020213630202033202020CE9020211DF020211D5020212000202108702020516
+INIT_2F = 02020644020211CA020210310202095602020F7A02020FA502020A0202020F44
+INIT_30 = 0606027006060BF106060900070701C40707025A07070BFC080801CE0A0A0265
+INIT_31 = 040413220404132D05051757050513CF050508F505050C93050513C406061762
+INIT_32 = 0303090A03030F9A0303018E03030C070404176C04040199040401D904040C9D
+INIT_33 = 03030FA503030F8F030304CB03030D29030313B90303119403031E9303031189
+INIT_34 = 030305F803030D3403030869030315880303159303031E8803030ACF03031031
+INIT_35 = 0202119F0202013802020C88020228B60202117E020205620202174C02020AC4
+INIT_36 = 020210260202039302021A5E0202012D02021A5302020B2F02021798020204D6
+INIT_37 = 02021F1F0202033D020228AB0202178D0202039D0202120002021AF502020F84
+INIT_38 = 6620313130322031323A37323A36302035322079614D2064655720746C697542
+INIT_39 = 202020202020202020202020202020204D3239393A393839206E7673206D6F72
+INIT_3A = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_3B = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_3C = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_3D = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_3E = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_3F = 0190019001900190019001900190019001900190019001900190019001900190
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+DCM "vga_ck_gen/DCM_inst/DCM_SP":
+CLKDV_DIVIDE:2
+CLKOUT_PHASE_SHIFT:NONE
+CLK_FEEDBACK:1X
+DESKEW_ADJUST:10
+DFS_FREQUENCY_MODE:LOW
+DLL_FREQUENCY_MODE:LOW
+DUTY_CYCLE_CORRECTION:TRUE
+FACTORY_JF1:0XC0
+FACTORY_JF2:0X80
+STARTUP_WAIT:STARTUP_WAIT
+CLKFX_DIVIDE = 2
+CLKFX_MULTIPLY = 4
+PHASE_SHIFT = 0
+X_CLKIN_PERIOD = 40.000000
+
+
+BUFGMUX "vga_clk_BUFG":
+DISABLE_ATTR:LOW
+
+
+
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| top/               |           | 789/1988      | 496/663       | 1245/3283     | 28/1187       | 1/16      | 6/7       | 1/1   | 0/1   | top                          |
+| +charpalette       |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top/charpalette              |
+| +chars             |           | 0/0           | 0/0           | 0/0           | 0/0           | 2/2       | 0/0       | 0/0   | 0/0   | top/chars                    |
+| +coll              |           | 0/76          | 0/0           | 0/148         | 0/128         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll                     |
+| ++ramx[0].ramx     |           | 13/13         | 0/0           | 22/22         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[0].ramx        |
+| ++ramx[1].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[1].ramx        |
+| ++ramx[2].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[2].ramx        |
+| ++ramx[3].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[3].ramx        |
+| ++ramx[4].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[4].ramx        |
+| ++ramx[5].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[5].ramx        |
+| ++ramx[6].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[6].ramx        |
+| ++ramx[7].ramx     |           | 9/9           | 0/0           | 18/18         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | top/coll/ramx[7].ramx        |
+| +j                 |           | 316/316       | 33/33         | 570/570       | 128/128       | 0/0       | 1/1       | 0/0   | 0/0   | top/j                        |
+| +jinsnh            |           | 14/134        | 16/16         | 0/216         | 0/128         | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh                   |
+| ++ram0             |           | 6/22          | 0/0           | 10/34         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0              |
+| +++hi              |           | 0/8           | 0/0           | 0/12          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/hi           |
+| ++++hi             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/hi/hi        |
+| ++++lo             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/hi/lo        |
+| +++lo              |           | 0/8           | 0/0           | 0/12          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/lo           |
+| ++++hi             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/lo/hi        |
+| ++++lo             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram0/lo/lo        |
+| ++ram1             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram1/lo/lo        |
+| ++ram2             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram2/lo/lo        |
+| ++ram3             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram3/lo/lo        |
+| ++ram4             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram4/lo/lo        |
+| ++ram5             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram5/lo/lo        |
+| ++ram6             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram6/lo/lo        |
+| ++ram7             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnh/ram7/lo/lo        |
+| +jinsnl            |           | 14/134        | 16/16         | 0/216         | 0/128         | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl                   |
+| ++ram0             |           | 6/22          | 0/0           | 10/34         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0              |
+| +++hi              |           | 0/8           | 0/0           | 0/12          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/hi           |
+| ++++hi             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/hi/hi        |
+| ++++lo             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/hi/lo        |
+| +++lo              |           | 0/8           | 0/0           | 0/12          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/lo           |
+| ++++hi             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/lo/hi        |
+| ++++lo             |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram0/lo/lo        |
+| ++ram1             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram1/lo/lo        |
+| ++ram2             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram2/lo/lo        |
+| ++ram3             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram3/lo/lo        |
+| ++ram4             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram4/lo/lo        |
+| ++ram5             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram5/lo/lo        |
+| ++ram6             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram6/lo/lo        |
+| ++ram7             |           | 6/14          | 0/0           | 10/26         | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7              |
+| +++hi              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/hi           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/hi/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/hi/lo        |
+| +++lo              |           | 0/4           | 0/0           | 0/8           | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/lo           |
+| ++++hi             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/lo/hi        |
+| ++++lo             |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/jinsnl/ram7/lo/lo        |
+| +ldac              |           | 8/8           | 15/15         | 14/14         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top/ldac                     |
+| +lfsr0             |           | 14/14         | 17/17         | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top/lfsr0                    |
+| +occ               |           | 0/142         | 0/0           | 0/268         | 0/225         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ                      |
+| ++ramx[0].ramx     |           | 22/22         | 0/0           | 36/36         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[0].ramx         |
+| ++ramx[1].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[1].ramx         |
+| ++ramx[2].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[2].ramx         |
+| ++ramx[3].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[3].ramx         |
+| ++ramx[4].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[4].ramx         |
+| ++ramx[5].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[5].ramx         |
+| ++ramx[6].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[6].ramx         |
+| ++ramx[7].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[7].ramx         |
+| ++ramx[8].ramx     |           | 15/15         | 0/0           | 29/29         | 25/25         | 0/0       | 0/0       | 0/0   | 0/0   | top/occ/ramx[8].ramx         |
+| +palette16h        |           | 0/26          | 0/0           | 0/42          | 0/32          | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h               |
+| ++ramx[0].ramx     |           | 5/5           | 0/0           | 7/7           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[0].ramx  |
+| ++ramx[1].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[1].ramx  |
+| ++ramx[2].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[2].ramx  |
+| ++ramx[3].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[3].ramx  |
+| ++ramx[4].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[4].ramx  |
+| ++ramx[5].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[5].ramx  |
+| ++ramx[6].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[6].ramx  |
+| ++ramx[7].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16h/ramx[7].ramx  |
+| +palette16l        |           | 0/26          | 0/0           | 0/42          | 0/32          | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l               |
+| ++ramx[0].ramx     |           | 5/5           | 0/0           | 7/7           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[0].ramx  |
+| ++ramx[1].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[1].ramx  |
+| ++ramx[2].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[2].ramx  |
+| ++ramx[3].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[3].ramx  |
+| ++ramx[4].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[4].ramx  |
+| ++ramx[5].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[5].ramx  |
+| ++ramx[6].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[6].ramx  |
+| ++ramx[7].ramx     |           | 3/3           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette16l/ramx[7].ramx  |
+| +palette4h         |           | 0/10          | 0/0           | 0/18          | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h                |
+| ++ramx[0].ramx     |           | 3/3           | 0/0           | 4/4           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[0].ramx   |
+| ++ramx[1].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[1].ramx   |
+| ++ramx[2].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[2].ramx   |
+| ++ramx[3].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[3].ramx   |
+| ++ramx[4].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[4].ramx   |
+| ++ramx[5].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[5].ramx   |
+| ++ramx[6].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[6].ramx   |
+| ++ramx[7].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4h/ramx[7].ramx   |
+| +palette4l         |           | 0/10          | 0/0           | 0/18          | 0/16          | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l                |
+| ++ramx[0].ramx     |           | 3/3           | 0/0           | 4/4           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[0].ramx   |
+| ++ramx[1].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[1].ramx   |
+| ++ramx[2].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[2].ramx   |
+| ++ramx[3].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[3].ramx   |
+| ++ramx[4].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[4].ramx   |
+| ++ramx[5].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[5].ramx   |
+| ++ramx[6].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[6].ramx   |
+| ++ramx[7].ramx     |           | 1/1           | 0/0           | 2/2           | 2/2           | 0/0       | 0/0       | 0/0   | 0/0   | top/palette4l/ramx[7].ramx   |
+| +picture           |           | 0/0           | 0/0           | 0/0           | 0/0           | 2/2       | 0/0       | 0/0   | 0/0   | top/picture                  |
+| +rdac              |           | 8/8           | 15/15         | 14/14         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | top/rdac                     |
+| +s2                |           | 32/32         | 5/5           | 49/49         | 35/35         | 0/0       | 0/0       | 0/0   | 0/0   | top/s2                       |
+| +spi1              |           | 52/52         | 50/50         | 49/49         | 3/3           | 0/0       | 0/0       | 0/0   | 0/0   | top/spi1                     |
+| +sprimg            |           | 0/0           | 0/0           | 0/0           | 0/0           | 8/8       | 0/0       | 0/0   | 0/0   | top/sprimg                   |
+| +sprpal            |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top/sprpal                   |
+| +sprval            |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | top/sprval                   |
+| +vga_ck_gen        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 1/1   | top/vga_ck_gen               |
+| +voicefh           |           | 0/48          | 0/0           | 0/88          | 0/64          | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh                  |
+| ++ramx[0].ramx     |           | 1/13          | 0/0           | 2/18          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[0].ramx     |
+| +++hi              |           | 6/6           | 0/0           | 8/8           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[0].ramx/hi  |
+| +++lo              |           | 6/6           | 0/0           | 8/8           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[0].ramx/lo  |
+| ++ramx[1].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[1].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[1].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[1].ramx/lo  |
+| ++ramx[2].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[2].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[2].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[2].ramx/lo  |
+| ++ramx[3].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[3].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[3].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[3].ramx/lo  |
+| ++ramx[4].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[4].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[4].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[4].ramx/lo  |
+| ++ramx[5].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[5].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[5].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[5].ramx/lo  |
+| ++ramx[6].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[6].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[6].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[6].ramx/lo  |
+| ++ramx[7].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[7].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[7].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefh/ramx[7].ramx/lo  |
+| +voicefl           |           | 0/44          | 0/0           | 0/84          | 0/64          | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl                  |
+| ++ramx[0].ramx     |           | 1/9           | 0/0           | 2/14          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[0].ramx     |
+| +++hi              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[0].ramx/hi  |
+| +++lo              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[0].ramx/lo  |
+| ++ramx[1].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[1].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[1].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[1].ramx/lo  |
+| ++ramx[2].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[2].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[2].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[2].ramx/lo  |
+| ++ramx[3].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[3].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[3].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[3].ramx/lo  |
+| ++ramx[4].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[4].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[4].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[4].ramx/lo  |
+| ++ramx[5].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[5].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[5].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[5].ramx/lo  |
+| ++ramx[6].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[6].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[6].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[6].ramx/lo  |
+| ++ramx[7].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[7].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[7].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicefl/ramx[7].ramx/lo  |
+| +voicela           |           | 0/44          | 0/0           | 0/84          | 0/64          | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela                  |
+| ++ramx[0].ramx     |           | 1/9           | 0/0           | 2/14          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[0].ramx     |
+| +++hi              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[0].ramx/hi  |
+| +++lo              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[0].ramx/lo  |
+| ++ramx[1].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[1].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[1].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[1].ramx/lo  |
+| ++ramx[2].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[2].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[2].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[2].ramx/lo  |
+| ++ramx[3].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[3].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[3].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[3].ramx/lo  |
+| ++ramx[4].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[4].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[4].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[4].ramx/lo  |
+| ++ramx[5].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[5].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[5].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[5].ramx/lo  |
+| ++ramx[6].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[6].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[6].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[6].ramx/lo  |
+| ++ramx[7].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[7].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[7].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicela/ramx[7].ramx/lo  |
+| +voicera           |           | 0/44          | 0/0           | 0/84          | 0/64          | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera                  |
+| ++ramx[0].ramx     |           | 1/9           | 0/0           | 2/14          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[0].ramx     |
+| +++hi              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[0].ramx/hi  |
+| +++lo              |           | 4/4           | 0/0           | 6/6           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[0].ramx/lo  |
+| ++ramx[1].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[1].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[1].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[1].ramx/lo  |
+| ++ramx[2].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[2].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[2].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[2].ramx/lo  |
+| ++ramx[3].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[3].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[3].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[3].ramx/lo  |
+| ++ramx[4].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[4].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[4].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[4].ramx/lo  |
+| ++ramx[5].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[5].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[5].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[5].ramx/lo  |
+| ++ramx[6].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[6].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[6].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[6].ramx/lo  |
+| ++ramx[7].ramx     |           | 1/5           | 0/0           | 2/10          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[7].ramx     |
+| +++hi              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[7].ramx/hi  |
+| +++lo              |           | 2/2           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/voicera/ramx[7].ramx/lo  |
+| +vs0               |           | 3/3           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs0                      |
+| +vs1               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs1                      |
+| +vs2               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs2                      |
+| +vs3               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs3                      |
+| +vs4               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs4                      |
+| +vs5               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs5                      |
+| +vs6               |           | 4/4           | 0/0           | 4/4           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs6                      |
+| +vs7               |           | 4/4           | 0/0           | 5/5           | 4/4           | 0/0       | 0/0       | 0/0   | 0/0   | top/vs7                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.
