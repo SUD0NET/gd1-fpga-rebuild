@@ -124,7 +124,7 @@ If you are on Windows or macOS:
 -   Install dependencies:
 
 ``` bash
-sudo apt install libncurses5 libgtk2.0-0
+sudo apt install libncurses5 libstdc++6 libx11-6 libxext6 libxrender1
 ```
 
 -   Run ISE installer inside WSL
