@@ -15,6 +15,15 @@ using the original sources and build system.
 
 ------------------------------------------------------------------------
 
+## License
+
+This project incorporates original work by **James Bowman**  
+and is distributed under the same license as his original project.
+
+See: [LICENSE](LICENSE)
+
+------------------------------------------------------------------------
+
 ## 🎯 Project Purpose
 
 -   Rebuild the original **Gameduino-200A bitstream**
