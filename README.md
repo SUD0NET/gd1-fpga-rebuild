@@ -32,9 +32,9 @@ See: [LICENSE](LICENSE)
 -   Provide flashing instructions for real hardware
 -   Built on hopes & dreams
 
-✔ Successfully rebuilt (I hope)\
+✔ Successfully rebuilt\
 ✔ Exact size match: **149,619 bytes** (archived page shows original with same size)\
-✔ (should) Run correctly on real XC3S200A hardware\
+✔ Runs correctly on real XC3S200A hardware\
 ✔ No synthesis errors (warnings only)
 
 ------------------------------------------------------------------------
@@ -89,8 +89,8 @@ You do *not* need to rebuild it unless you want to verify or experiment.
 
 This repository already contains:
 
--   A (maybe) working `gameduino-200a.bit`
--   (soon) Verified on real hardware
+-   A working `gameduino-200a.bit`
+-   Verified on real hardware
 -   Matches archived size references!!!
 
 ### If you *do* want to rebuild it yourself:
